@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>First page</title>
+
+	<script>
+		window.onload = function () {
+			document.getElementById("but").onclick = function() {
+				fun(8);
+			}
+		}
+
+		function fun(a) {
+			if (a == 0) {
+				a = 1;
+			}
+
+			for (var i = a - 1; i > 0; i-- ) {   
+				a = a * i;			}
+
+			alert (a);
+
+		}
+
+	</script>
+</head>
+	<body>
+		<div class="wrapper">
+			<h1>Hello World!!!</h1>
+
+			<h2>Lorem</h2>
+		</div>
+		
+		<form action="">
+			<input type="text" name="field" value="">
+			<input type="button" id="but">
+			<input type="button" id="fib" onclick="fib(5)">
+		</form>
+	</body>
+</html>
+
+
+
+
+
+<!-- function fun(a) {
+			if (a == 0) {
+				a = 1;
+			};
+
+			for ( var i = a - 1; i > 0; i--) {
+				a = a * i;
+			}
+
+			alert (a);
+
+		} -->
