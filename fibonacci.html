@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonacci number</title>
+	<script>
+
+	var num = 30;
+	var given_fib = 2; /*заданное число Фибоначчи*/
+	var Fib = [];
+	var GivenFib = [];
+	var given_fib_num = 0;
+
+	function click_me(){
+		if(given_fib_num == 0){
+			alert("Not a Fibonacci number");
+		}
+		else{
+		alert(GivenFib);
+		}
+	}
+
+	function fibonacci(num){
+		if (num < 3) {
+			return 1;
+		}
+		else{
+			return fibonacci(num - 1) + fibonacci(num-2);
+		}
+	}
+
+	for (i=1; i <= num; i++) { 
+		Fib[i] = fibonacci(i);
+		if(fibonacci(i) == given_fib){
+			given_fib_num = i;
+		}
+	}
+
+	for (i=given_fib_num; i <= (given_fib_num+3); i++) { 
+		GivenFib[i] = fibonacci(i);
+	}
+
+	</script>
+</head>
+<body>
+<form>
+	<input type="button" value="Click me" onclick="click_me()">
+</form>
+</body>
+</html>
