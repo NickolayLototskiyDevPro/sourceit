@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Практика js</title>
+
+
+</head>
+<body>
+
+<script>
+
+    function fun(a) {
+        if ((typeof a === 'string') && (a.length == 1)) {
+                var c = a;
+                alert (c);
+                while (c) {
+                    if (c.length < 10) {
+                        c = c + a;
+                        alert(c);
+                    } else {
+                        alert("false");
+                        break;
+                    }
+                }
+        } else {
+            alert("Введите одну букву!");
+        }
+    }
+
+    function fun2() {
+        var letter = prompt('Введите любую букву', '');
+
+        if ((typeof letter === 'string') && (letter.length == 1)) {
+            var x = letter;
+            alert (x);
+            for (var i = 0; i <= 1000; i++) {
+                if (i <= 10) {
+                    x = x + letter;
+                    alert (x);
+                } else {
+                    alert ('false');
+                    break;
+                }
+            }
+        } else {
+            alert ('Необходимо ввести одну букву!!!');
+        }
+    }
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
