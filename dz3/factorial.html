@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Расчет факториала</title>
+</head>
+<script>
+function factorial(num){
+
+start = document.getElementById('c').value;
+	if(start < 0 ){
+		alert("Задано отрицательное значение!Допускаются только положительные значения!")
+		throw new Error("negative amount of factorial number")
+}
+		if (start === 0){
+			return 1;
+}
+		finish = 1;
+		for(i = 1; i <= start; i++){
+		finish = finish * i;
+}
+		document.getElementById('d').value = finish;
+}
+</script>
+<body>
+<div>
+<p>Введите число для расчета факториала в поле "start"!</p>
+<p>Нажмите кнопку "Факториал" для расчета!</p>
+<p>Ваше число будет в поле "finish"</p>
+start=<input type="text" id='c' size='5'>
+finish=<input type="text" id='d' size='5'>
+<input type="button" value="Факториал" onclick="factorial()">
+</div>
+</body>
+</html>
