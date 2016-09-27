@@ -1,0 +1,158 @@
+body{
+	margin: 0;
+}
+#wrapper{
+	width: 500px;
+	margin: 50px auto;
+	position: relative;
+}
+.box{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 6px 10px 0;
+	width: 100px;
+	height: 100px;
+	background: yellow;
+}
+.item1{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 6px 10px 0;
+	width: 100px;
+	height: 100px;
+	background: #FBFAFA;
+	position: relative;
+	left: 0px;
+}
+.item2{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 6px 10px 0;
+	width: 100px;
+	height: 33.3px;
+	background: blue;
+	position: absolute;
+	top: 33.3px;
+	right: 393px;
+}
+.item3{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 6px 10px 0;
+	width: 100px;
+	height: 33.3px;
+	background: red;
+	position: absolute;
+	top: 66px;
+	right: 393px;
+}
+.item5{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 6px 10px 0;
+	width: 100px;
+	height: 33.3px;
+	background: red;
+	position: absolute;
+	top: 33.3px;
+	left: 220px;
+}
+.item6{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 6px 10px 0;
+	width: 100px;
+	height: 33.3px;
+	background: black;
+	position: absolute;
+	top: 0px;
+	left: 220px;
+}
+.item9{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 6px 10px 0;
+	width: 33.3px;
+	height: 100px;
+	background: blue;
+	position: absolute;
+	left: 330px;
+	bottom: 0px;
+}
+.item8{
+    width: 74px;
+	height: 25px;
+    background: white;
+    padding: 5px;
+    padding-right: 20px; 
+    border: solid 1px black; 
+	position: absolute;
+	top: 110px;
+	left: 1px;
+}
+.item10{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 6px 10px 0;
+	width: 33.3px;
+	height: 100px;
+	background: white;
+	position: absolute;
+	left: 365px;
+	bottom: 0px;
+}
+.item11{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 6px 10px 0;
+	width: 33.3px;
+	height: 100px;
+	background: red;
+	position: absolute;
+	left: 400px;
+	bottom: 0px;
+}
+.item12{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 6px 10px 0;
+	width: 100px;
+	height: 50px;
+	background: blue;
+	position: absolute;
+	left: 110px;
+	top: 0px;
+}
+.item13{
+    width: 74px;
+	height: 25px;
+    background: white;
+    padding: 5px;
+    padding-right: 20px; 
+    border: solid 1px black; 
+	position: absolute;
+	top: 110px;
+	left: 111px;
+}
+.item14{
+    width: 74px;
+	height: 25px;
+    background: white;
+    padding: 5px;
+    padding-right: 20px; 
+    border: solid 1px black; 
+	position: absolute;
+	top: 110px;
+	left: 221px;
+}
+.item15{
+    width: 77px;
+	height: 25px;
+    background: white;
+    padding: 5px;
+    padding-right: 20px; 
+    border: solid 1px black; 
+	position: absolute;
+	top: 110px;
+	left: 330px;
+}
