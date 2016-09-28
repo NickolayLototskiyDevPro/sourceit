@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function clickme(){
+			var word=prompt();
+
+			function RewriteText(input_word){
+				var text=document.getElementById('id1').innerText,
+		    		text_array=text.split(' ');
+
+		    	function RewriteWord(value, char){
+			    	var value_str=value.split('');
+			    	for (var i = 0; i < value_str.length; i++) {
+			    		value_str[i]=char;
+			    	}
+			    	return value_str.join('');
+		    	}	
+
+		    	var NewWord=RewriteWord(input_word,'X');
+
+		    	for (var i = 0; i < text_array.length; i++) {
+			    	if (text_array[i]===word){
+			    		//alert('');
+			    		text_array[i]=NewWord;
+			    	}
+			    }
+
+			    document.getElementById('id1').innerText=text_array.join(' ');
+		    		
+			}
+
+			RewriteText(word);
+		}
+	</script>
+
+</head>
+<body>
+	<div id="id1">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est aborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+	<button onclick="clickme()">click me</button>
+	
+</body>
+</html>
