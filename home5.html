@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var MyArray=[8,5,7,4,2],
+			value;
+
+		console.log(MyArray);
+			
+		for (var j=0; j<MyArray.length; j++){	
+			for (var i = 0; i < MyArray.length ; i++) {
+				if (MyArray[i+1] < MyArray[i]) {
+					value=MyArray[i+1];
+					MyArray[i+1]=MyArray[i];
+					MyArray[i]=value;
+				}
+		}}
+
+		console.log(MyArray);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
