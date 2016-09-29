@@ -1,0 +1,32 @@
+<html>
+    <head>
+        
+        <title> my first site 2</title>
+        <script>
+            function click_me(){
+            alert(factorial(5));                
+            }     
+            function factorial(num){
+//            var num=prompt("Ввидите факториал:"," ")
+//                if(n=0){
+//                    return 1;
+//                }else{
+//                    return num * factorial(num-1);
+//                }
+                var ret=1;
+                for(var i=1; i<=num ; i++)
+                    ret=ret*i;
+                    return ret;
+                }
+        </script>
+    </head>
+    <body>
+        <div>    
+        <h1>Hellow world</h1>
+        <h2> head wersion </h2>
+        </div>
+        <form>
+            <input type="button" value="click me" onclick="click_me()">        
+        </form>
+    </body>
+</html>
