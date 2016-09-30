@@ -1,0 +1,34 @@
+﻿<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> My first page</title>
+    <script ">
+     var Change_String = prompt("Enter string");
+var Delite_Word_1 = "Мир";
+var Delite_Word_2 = "мир";
+var Delite_Word_3 = "мИр";
+var Delite_Word_4 = "миР";
+var Delite_Word_5 = "МИр";
+var Delite_Word_6 = "мИР";
+var Delite_Word_7 = "Мир";
+var Delite_Word_8 = "МИР";
+var Delite_Word_9 = "МиР"
+var arrString=Change_String.split(" ");
+for(var i = 0; i<arrString;i++);
+
+for (var i=0; i<arrString.length; i++){
+    if(arrString[i]== Delite_Word_1 || arrString[i]==Delite_Word_2 || arrString[i]==Delite_Word_3 || arrString[i]==Delite_Word_4 || arrString[i]==Delite_Word_5 || arrString[i]==Delite_Word_6 || arrString[i]==Delite_Word_7  || arrString[i]==Delite_Word_8){
+        arrString[i]='***';
+                  }
+}
+ var New_String=arrString.join(' ');
+        console.log(New_String);
+    </script>
+</head>
+
+<body>
+   
+</body>
+
+</html>
