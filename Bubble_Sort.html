@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> My first page</title>
+    <script >
+
+var Bubble_enter = prompt("Enter Numbers");
+var arr_Bubble = Bubble_enter.split(" ");
+for(var i = 0; i<arr_Bubble;i++);        
+        
+for (var j = 0, len = arr_Bubble.length - 1; j < len; j++) {
+    var swapped = false;
+    var i = 0;
+    while (i < len - j) {
+        if (arr_Bubble[i] > arr_Bubble[i + 1]) {
+            var c = arr_Bubble[i];
+            arr_Bubble[i] = arr_Bubble[i + 1];
+            arr_Bubble[i + 1] = c;
+            swapped = true;
+        }
+        i++;
+    }
+    
+    if(!swapped)
+        break;
+}
+var New_Bubble = arr_Bubble.join(" ");       
+console.log(New_Bubble);
+    </script>
+</head>
+
+<body>
+   
+</body>
+
+</html>
