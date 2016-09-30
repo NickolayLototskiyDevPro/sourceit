@@ -14,7 +14,7 @@
 
 <script>
 
-    function fun(a) {
+    function let1(a) {
         if ((typeof a === 'string') && (a.length == 1)) {
                 var c = a;
                 alert (c);
@@ -36,7 +36,7 @@
 
 
 
-    function fun2() {
+    function let2() {
         var letter = prompt('Введите любую букву', '');
 
         if ((typeof letter === 'string') && (letter.length == 1)) {
@@ -53,6 +53,46 @@
             }
         } else {
             alert ('Необходимо ввести одну букву!!!');
+        }
+    }
+
+
+
+
+    function let3(q) {
+        var a = 'a';
+        var z = a;
+
+        if ((typeof q === 'number') && (q <= 1000)) {
+            console.log(a);
+            for (var i = 0; i < q; i++) {
+                z = z + a;
+                console.log(z);
+            }
+        } else if (typeof q === 'string') {
+            console.log('Enter a number!');
+        } else {
+            console.log('The number is too large!!! Enter ф number less 1000!');
+        }
+    }
+
+
+    function let4(q) {
+        var a = 'x';
+        var z = a;
+
+        if ((typeof q === 'number') && (q <= 1000)) {
+            console.log(z);
+            var w = 0;
+            while (w < q) {
+                z = z + a;
+                w++;
+                console.log(z);
+            }
+        } else if (typeof q === 'string') {
+            console.log("Please enter the number!");
+        } else {
+            console.log('The number is too large!!! Enter a number less 1000!');
         }
     }
 
