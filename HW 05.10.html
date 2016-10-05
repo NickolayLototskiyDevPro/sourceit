@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head meta charset="utf-8">
+<script type="text/javascript"></script>
+<script> 
+
+var A = [1,1,7,7,8,8,3,3,4,];
+function singleone(A)   
+{   
+    var n = A.length, B = [];
+    for (var i = 1, j = 0, t; i < n+1; i++)
+     { if (A[i-1] === A[ i ]) t = A[i-1];
+       if (A[i-1] !== t) B[j++] = A[i-1];
+     }
+                    
+    return B;       
+}
+document.write(singleone(A)); 
+
+</script>
+
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
