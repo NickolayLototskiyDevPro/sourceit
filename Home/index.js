@@ -64,7 +64,7 @@ sort()
 
 //30.09.16
 
-var a = [1, 2, 3, 5, 6, 9, 8, 9, 9, 9, 20];
+/*var a = [1, 2, 3, 5, 6, 9, 8, 9, 9, 9, 20];
 var b = [2, 4, 6, 8, 9, 12, 15, 20];
 
 var sum = function(){
@@ -82,9 +82,9 @@ var sum = function(){
 					mass = mass.concat(e);
 					console.log(mass);
 }
-sum();
+sum();*/
 /*----------------------------------------------------------------------*/
-var str = 'aa bb ab aa bb bb aa bb aa bb bb aa bb bb aa';
+/*var str = 'aa bb ab aa bb bb aa bb aa bb bb aa bb bb aa';
 var str2 = 'aa bb';
 
 var arr = str.split(' ');
@@ -99,9 +99,9 @@ var iteration = function(){
 	}
 	return summIter;
 }
-console.log(iteration());
+console.log(iteration());*/
 /*-----------------------------------------------------------------------*/
-function massiv(a){
+/*function massiv(a){
 	var b = '';
 	if(typeof a === 'number' && a<=1000){
 			for(var i=1; i<=a; i++){
@@ -112,15 +112,45 @@ function massiv(a){
 		console.log('error');
 	}
 }
-massiv(10);
+massiv(10);*/
 /*------------------------------------------------------------------*/
-function sumT(n){
+/*function sumT(n){
 	var b = 0;
 	for(var i=1; i<=n; i++){
 		b+=i;
 	}
 	return b;
 }
-console.log(sumT(100));
+console.log(sumT(100));*/
+
+
+
+var mass = [2, 3, 4, 5, 4, 3, 2];
+
+var singleNumber = function(num){
+	
+
+	for(var i = 0; i< mass.length; i++){
+		var z = 0;
+		for(var j = 0; j<mass.length; j++){
+					if(i===j){
+						continue;
+					}
+					else if(mass[i]===mass[j]){
+						z=1;
+						continue;
+					}
+		}
+					if(z===0){
+						console.log(mass[i]);
+						break;
+					}
+		
+	}
+}
+singleNumber();
+
+	
+
 
 
