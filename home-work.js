@@ -170,4 +170,28 @@ function unpairedNumber(num) {
             true;
         }
     }
+
+
+// Поиск палиндрома в данной строке
+
+var string = 'слово1 слово2 слово3 слово4 слово5 слово6 оно слово7 олло слово8';
+
+var muss = string.split(' ');
+
+function palindrom() {
+
+    for (var i = 0; i < muss.length; i++) {
+
+        var firstWorld = muss[i];
+
+        var secMuss = firstWorld.split('');
+        
+        var revSecMuss = secMuss.reverse();
+        
+        var contrStr = revSecMuss.join('');
+
+        if (firstWorld == contrStr) {
+            alert ('В этой строке слово полиндром ' + contrStr);
+        }
+    }
 }
