@@ -8,4 +8,4 @@ var lastNumber = Number(lastElement);
 summArifmeticalProgression = 0;
 for (firstNumber ; firstNumber <= lastNumber; firstNumber++)
 {summArifmeticalProgression += firstNumber}
-console.log(summ);
+console.log(summArifmeticalProgression);
