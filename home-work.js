@@ -152,3 +152,24 @@ function fun1() {
   alert(x);
 
 }
+
+
+
+
+// Вывод непарного числа из массива парных чисел
+
+
+var num = [2, 2, 7, 7, 81, 81, 5, 5, 145, 145, 0, 0, 678, 678, 123456789, 19, 19, 390, 390];
+
+function unpairedNumber(num) {
+    for (var i = 0; i < num.length; i++) {
+        if ((i & 1) == 0) {
+            if (num[i] != num[i + 1]) {
+                alert (num[i]);
+                break;
+            }
+        } else {
+            true;
+        }
+    }
+}
