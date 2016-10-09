@@ -6,14 +6,14 @@ function Tank (){
 	this.shell = 100;
 	this.MAX_SPEED = 60;
 	this.speed = 0;
-	this.driveFaster = function(this.speed){
+	this.driveFaster = function(){
 			this.speed = this.speed + 1;
 			console.log('Speed of the Tank is : ' + this.speed);
 			if(this.speed > this.MAX_SPEED){
 				console.log('The speed is too fast');
 			}
 	};
-	this.driveSlower = function(this.speed){
+	this.driveSlower = function(){
 		this.speed = this.speed - 1;
 		if (this.speed < 0){
 			console.log('Speed is 0 km/h. The Tank is standing now.');
@@ -22,7 +22,7 @@ function Tank (){
 			console.log('The speed is : ' + this.speed);
 				}
 	};
-	this.shoot = function(this.shell){
+	this.shoot = function(){
 		this.shell = this.shell - 1;
 		if (this.shell < 0 || this.speed > 40){
 			console.log('There is no shell anymore! You can not shoot, decrease the speed');
