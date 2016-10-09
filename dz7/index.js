@@ -12,10 +12,7 @@ var str10 = 'M m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m
 
 var AllStr = [str1, str2, str3, str4, str5, str6, str7, str8, str9, str10]; 
 var time1 = performance.now();
-for (var i = 0; i < 10; i++) {
 var result = AllStr.join('').replace(/ /g,"");
-}
 var time2 = performance.now();
-
 
 console.log(result, '\ndate->',time2 - time1);
