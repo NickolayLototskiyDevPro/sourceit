@@ -172,6 +172,7 @@ function unpairedNumber(num) {
     }
 
 
+
 // Поиск палиндрома в данной строке
 
 var string = 'слово1 слово2 слово3 слово4 слово5 слово6 оно слово7 олло слово8';
@@ -194,4 +195,72 @@ function palindrom() {
             alert ('В этой строке слово полиндром ' + contrStr);
         }
     }
+}
+
+
+
+// Tank
+
+function tank() {
+    var ammunition = parseInt(prompt('Enter the number of shells', ''));
+    tank.fuel = 100;
+    tank.hp = 10;
+    tank.team = 4;
+    tank.speed = 50;
+    tank.maxSpeed = 60;
+    tank.minSpeed = 0;
+
+    this.speedFaster = function() {
+        if (tank.speed < tank.maxSpeed) {
+            console.log(++tank.speed);
+        } else {
+            console.log('Tank top speed of 60 km/h!')
+        }
+    };
+
+    this.speedSlow = function() {
+        if (tank.speed > tank.minSpeed) {
+            console.log (--tank.speed);
+        } else {
+            console.log('The tank stands on the site.');
+        }
+    };
+
+    this.ammunitionLeft = function() {
+        if (tank.speed < 40) {
+            if (ammunition > 0) {
+                console.log(--ammunition);
+            } else {
+                alert('Ended shells!!!');
+            }
+        } else {
+            alert('The tank can not shoot if the speed exceeds 40 km/h. Slow down.');
+        }
+    }
+}
+
+var panzer = new tank();
+panzer.speedFaster();
+panzer.speedSlow();
+panzer.ammunitionLeft();
+
+
+
+// Склеивание строк
+
+var string = 'world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world world';
+
+function addingRows() {
+
+    var bigMass = [];
+
+
+    for (var i = 0; i <= 9; i++) {
+        bigMass.push(string);
+    }
+
+    var bigString = bigMass.join(' ');
+
+    console.log(bigString);
+
 }
