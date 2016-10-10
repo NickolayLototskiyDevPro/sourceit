@@ -22,7 +22,7 @@ this.boost = function (Speed){
  }
 
 this.slow = function (Speed){
-
+	// I cant understand this construction?
  	if (Speed < MaxSpeed){
  		Speed--;
  		console.log('Tank speed decreased!You current speed is ' + Speed + ' Km/H!');
@@ -35,11 +35,11 @@ this.slow = function (Speed){
  }
 
 this.fire = function (Bullets){
-
-	if (Speed > ShootSpeed){
+	// Use boolean operator && and add additional condition
+	if (Speed > ShootSpeed) {
 		alert('You cant fire on this speed!'); // не могу заставить работать ограничение по скорости на стрельбу!
 	}
-
+	// Do not use not operator it is hard to read
 	else if (Bullets <= 0){
 		alert('No bullets!');
 	}
@@ -51,6 +51,7 @@ this.fire = function (Bullets){
  	}
  }
 }
+// Use empty lines
 var cab = new Tank();
 console.log('Armor is ' + cab.Armor + '%');
 console.log('Fuel is ' + cab.Fuel + '%');
