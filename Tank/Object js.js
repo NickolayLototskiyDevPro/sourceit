@@ -29,7 +29,7 @@ var Tank = function (Shell) {
         }
     };
     this.Shoot = function () {
-        if (this.Shell === 0 || this.Current_Speed >= this.Max_Speed){
+        if (this.Shell === 0 || this.Current_Speed >= this.Max_Speed_Shot){
             alert("Check the speed.She = " + this.Current_Speed + "KM" +" Or shells. They = " + this.Shell);
         }else{
             this.Shell--;
@@ -49,3 +49,4 @@ New_Tank.Shoot();
 New_Tank.Shoot();
 New_Tank.Shoot();
 New_Tank.Shoot();
+New_Tank.Fast();
