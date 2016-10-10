@@ -1,4 +1,6 @@
 function Tank(ammunition) {
+  // There are no public fields. 
+  // Add public fields
   var fuel = 0,
       life_points = 0,
       crew = 0,
