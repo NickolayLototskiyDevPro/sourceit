@@ -1,3 +1,4 @@
+// Class name has to start from capital letter.
 function newTank(newAmmunition, newfuel){
 	
 	var maxSpeed=60,
@@ -22,6 +23,7 @@ function newTank(newAmmunition, newfuel){
 		alert(currentSpeed);
 	}
 
+//Does not show current speed
 	this.setSpeed_slow=function(){
 		if ( currentSpeed > minSpeed ) {
 			currentSpeed--;
@@ -36,6 +38,7 @@ function newTank(newAmmunition, newfuel){
 
 	}
 
+// GOOD!
 	this.get_Speed=function(){
 		return currentSpeed;
 	}	
