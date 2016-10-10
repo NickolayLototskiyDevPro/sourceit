@@ -1,6 +1,8 @@
+// do not call files such complex names!
 "use stict"
 
 var Tank = function (Shell) {
+    // All properties is public make Min_Speed and others private
     //Properties of the tank
     this.Fuel = 100;
     this.Shell = Shell;
