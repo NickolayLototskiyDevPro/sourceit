@@ -1,0 +1,61 @@
+
+#Wrapper{
+	width: 90%;
+    height: 90%;
+    
+	margin: 0 auto;
+	position: relative;
+    /*background: green;*/
+}
+
+#CentralDiv {
+   	width: 31.250em;
+    height: 31.250em;
+    top : 15%;
+    margin : 1em auto;
+    background: crimson;
+    border-radius: 10px;
+
+}
+
+#ControlsANdStatus {
+    width: 50em;
+    margin : 5 px auto;
+    position: relative;
+}
+
+#Status {
+    display: inline-block;
+    vertical-align: top;
+	margin: 0 6px 10px 0;
+    background: orange;
+    border-radius: 10px;
+    width: 15em;
+    height: 15em;
+    text-align: center;
+}
+
+#Controls {
+    display: inline-block;
+    vertical-align: top;
+	margin: 0 6px 10px 0;
+ 	width: 25em;
+    height: 15em;
+    background: blue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    border-radius: 3px;
+    margin: 10px 6px 10px 10px;
+
+}
+
+ul {
+  
+}
+li {
+    text-align: center;
+    list-style-type: none;
+}

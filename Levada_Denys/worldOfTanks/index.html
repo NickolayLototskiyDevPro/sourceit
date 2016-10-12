@@ -2,9 +2,56 @@
     <head>
         <title> World Of Tanks </title>
         <script src = 'js/worldOfTanks.js'> </script>
+        <link rel = 'stylesheet' type = 'text/css' href = 'css/all.css'>
         </head>
 
         <body>
+            <div id = 'Wrapper'>
+
+                <div id = 'CentralDiv'>
+
+                </div>
+               
+               <div id = 'ControlsAndStatus'>
+                <div id = 'Status'>
+                    <div id = 'Speed'>
+                        <script> document.getElementById('Speed').innerHTML = 'Speed : ' + t35.speed; </script>
+                    </div>
+                    <div id = 'Ammo'>
+                        <script> document.getElementById('Ammo').innerHTML = 'Ammo : ' + t35.ammo; </script>
+                    </div>
+                    <div id = 'Hp'>
+                        <script> document.getElementById('Hp').innerHTML = 'Hp : ' + t35.hp; </script>
+                    </div>
+                    <div id = 'Fuel'>
+                        <script> document.getElementById('Fuel').innerHTML = 'Fuel : ' + t35.fuel; </script>
+                    </div>
+
+                </div>
+                <div id = 'Controls'>
+                    <!--<button onclick = chooseTheTank()>Choose the tank</button>-->
+                    <ul>
+                        <li>
+                            <button onclick = t35.goFaster()> Speed up! </button>
+                        </li>
+
+                        <li>
+                            <button onclick = t35.turnLeft()> Turn Left </button>
+
+                            <button onclick = t35.shot()> Piy piy! </button>
+
+                            <button onclick = t35.turnRight()> Turn right </button>
+                        </li>
+
+                        <li>
+                            <button onclick = t35.goSlower()> Slow down </button>
+                        </li>
+                    </ul>
+                </div>
+
+               </div>                
+
+            </div>
 
         </body>
 </html>
