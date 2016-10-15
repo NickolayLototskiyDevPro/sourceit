@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>World of tanks</title>
+	<link type="text/css" rel="stylesheet" href="css/tank.css"/>
+	<script type="text/javascript" src="js/Tank.js"></script>
+</head>
+<body>
+<div id="events">
+	<div id="speed_div">Speed: <span id="speed_span"></span></div>
+	<div id="ammo_div">Ammo: <span id="ammo_span"></span></div>
+</div>
+<div id="game_field"></div>
+<form>
+<div id="nav">
+<div>
+	<input type="button" id="faster" value="Faster" onclick="message(speed_span, selectedTank.faster)">	
+</div>
+<div>
+	<input type="button" id="left" value="<" onclick="">
+	<input type="button" id="shoot" value="*" onclick="message(ammo_span, selectedTank.shoot)">
+	<input type="button" id="right" value=">" onclick="">
+</div>
+<div>
+	<input type="button" id="slower" value="Slower" onclick="message(speed_span, selectedTank.slower)">
+</div>
+</div>
+<div id="selectTank">
+Choose tank:
+<select id="chooseTank" name="chooseTank" onchange="changeTank()">
+<option value="cometTank">Comet</option>
+<option value="t_35_1">T-35</option>    
+</select>
+</div>
+</form>
+</body>
+</html>
