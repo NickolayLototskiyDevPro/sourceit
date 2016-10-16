@@ -102,7 +102,7 @@ function nodeId () {
         father.push(arguments[globeCount].__proto__.name);
         }
 
-        fatherAndIdOfChild.push((globeCount + 1) + '. Father is : ' + father[globeCount]);
+        fatherAndIdOfChild.push('Id : ' + (globeCount + 1) + '. Object ' + arguments[globeCount].__proto__.constructor.name + ' father is : ' + father[globeCount]);
     }
 
     return fatherAndIdOfChild;
