@@ -9,8 +9,8 @@
 }
 
 #CentralDiv {
-   	width: 31.250em;
-    height: 31.250em;
+   	width: 19em;
+    height: 19em;
     top : 15%;
     margin : 1em auto;
     background: crimson;
@@ -24,13 +24,20 @@
     position: relative;
 }
 
+.space {
+width: 14%;
+height: 15em;
+display: inline-block;
+margin: 0 auto;
+}
+
 #Status {
     display: inline-block;
     vertical-align: top;
 	margin: 0 6px 10px 0;
     background: orange;
     border-radius: 10px;
-    width: 15em;
+    width: 16%;
     height: 15em;
     text-align: center;
 }
@@ -39,7 +46,7 @@
     display: inline-block;
     vertical-align: top;
 	margin: 0 6px 10px 0;
- 	width: 25em;
+ 	width: 36%;
     height: 15em;
     background: blue;
     border-radius: 10px;
@@ -48,8 +55,14 @@
 
 button {
     border-radius: 3px;
+    width: 4em;
+    height: 4em;
     margin: 10px 6px 10px 10px;
 
+}
+
+#Piy {
+    border-radius: 50%;
 }
 
 ul {

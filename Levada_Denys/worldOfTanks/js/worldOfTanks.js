@@ -8,7 +8,7 @@ function Tank (amunition) {
 
     Tank.prototype.goFaster = function () {
         if(this.speed < 100){
-            document.getElementById('Speed').innerHTML = 'Speed :' + (++this.speed);
+            document.getElementById('Speed').innerHTML = 'Speed : ' + (++this.speed);
         return this.speed;
         }
         return alert('We can`t go faster!');
@@ -18,7 +18,7 @@ function Tank (amunition) {
         if (this.speed === 0) {
             return alert('We already stopped!');
         } 
-        document.getElementById('Speed').innerHTML = 'Speed :' + (--this.speed);
+        document.getElementById('Speed').innerHTML = 'Speed : ' + (--this.speed);
 
         return this.speed;
     };
