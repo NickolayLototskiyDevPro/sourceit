@@ -1,0 +1,70 @@
+@import url(reset.css);
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/jswork\/home\/10_10\/css\/index\.scss}line{font-family:\000033}}
+.content {
+  display: block;
+  position: relative;
+  height: 500px;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/jswork\/home\/10_10\/css\/index\.scss}line{font-family:\000038}}
+  .content .T_35 {
+    display: block;
+    background: black;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    position: absolute; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/jswork\/home\/10_10\/css\/index\.scss}line{font-family:\0000319}}
+.indicators {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid black;
+  margin: 5px;
+  background: yellow; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/jswork\/home\/10_10\/css\/index\.scss}line{font-family:\0000325}}
+  .indicators .indicatName {
+    margin: 20px 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/jswork\/home\/10_10\/css\/index\.scss}line{font-family:\0000327}}
+    .indicators .indicatName li {
+      color: black;
+      font: 12px;
+      padding: 5px 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/jswork\/home\/10_10\/css\/index\.scss}line{font-family:\0000331}}
+      .indicators .indicatName li .index {
+        float: right;
+        border: 1px solid black;
+        text-align: center;
+        padding: 0px 10px;
+        width: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/jswork\/home\/10_10\/css\/index\.scss}line{font-family:\0000342}}
+.pannel {
+  display: inline-block;
+  width: 45%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/jswork\/home\/10_10\/css\/index\.scss}line{font-family:\0000345}}
+  .pannel form {
+    outline: none;
+    margin: 20px 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/jswork\/home\/10_10\/css\/index\.scss}line{font-family:\0000348}}
+    .pannel form .speed_up, .pannel form .speed_down {
+      width: 21%;
+      margin: 15px auto;
+      display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/jswork\/home\/10_10\/css\/index\.scss}line{font-family:\0000353}}
+    .pannel form .maneuver_right, .pannel form .maneuver_left, .pannel form .kill {
+      width: 21%;
+      margin: 15px 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/jswork\/home\/10_10\/css\/index\.scss}line{font-family:\0000357}}
+    .pannel form .maneuver_right {
+      float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/jswork\/home\/10_10\/css\/index\.scss}line{font-family:\0000360}}
+    .pannel form .kill {
+      width: 60px;
+      border-radius: 30px;
+      height: 60px;
+      margin: 0px 80px;
+      outline: none;
+      background: red; }
+
+/*# sourceMappingURL=index.css.map */
