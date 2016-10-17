@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+.panel_tank{
+	position:relative;
+	left:200px;}
+.button_fast{
+	position: relative;
+	background:blue;
+	top:10px;
+	left:125px;
+	
+	}
+.button_slow{
+	position:relative;
+	background:blue;
+	top:90px;
+	left:78px;
+	}
+.button_shot{
+	background:red;
+	margin:30px;
+	position:relative;
+	top:50px;
+	}
+.button_left{
+	background:blue;
+	margin:30px;
+	position:relative;
+	left:-160px;
+	top: 50px;
+	
+	}
+.button_right{
+	background:blue;
+	position:relative;
+	top:50px;
+	left:-120px;
+	}				
