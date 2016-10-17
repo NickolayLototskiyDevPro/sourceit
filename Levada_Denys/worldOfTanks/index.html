@@ -1,64 +1,81 @@
 <html>
     <head>
         <title> World Of Tanks </title>
+                <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        
         <script src = 'js/worldOfTanks.js'> </script>
         <link rel = 'stylesheet' type = 'text/css' href = 'css/all.css'>
         </head>
 
         <body>
             <div id = 'Wrapper'>
+                
+                <div id = 'Centr' class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                    <div id = 'CentralDiv'>
 
-                <div id = 'CentralDiv'>
-
+                    </div>
                 </div>
                
-               <div id = 'ControlsAndStatus'>
-                   <div class = 'Space'>
+               <div id = 'ControlsAndStatus' class="row">
+                   <!--<div class="row">-->
+                        <div id = 'Status' class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
+                            <!--<div id = 'StatusWrapper'>-->
+                                <div id = 'Speed'>
+                                    <script> document.getElementById('Speed').innerHTML = 'Speed : ' + t35.speed; </script>
+                                </div>
+                                <div id = 'Ammo'>
+                                    <script> document.getElementById('Ammo').innerHTML = 'Ammo : ' + t35.ammo; </script>
+                                </div>
+                                <div id = 'Hp'>
+                                    <script> document.getElementById('Hp').innerHTML = 'Hp : ' + t35.hp; </script>
+                                </div>
+                                <div id = 'Fuel'>
+                                    <script> document.getElementById('Fuel').innerHTML = 'Fuel : ' + t35.fuel; </script>
+                                </div>
+                            <!--</div>-->
+                        </div>
 
-                   </div>
-                <div id = 'Status'>
-                    <div id = 'Speed'>
-                        <script> document.getElementById('Speed').innerHTML = 'Speed : ' + t35.speed; </script>
-                    </div>
-                    <div id = 'Ammo'>
-                        <script> document.getElementById('Ammo').innerHTML = 'Ammo : ' + t35.ammo; </script>
-                    </div>
-                    <div id = 'Hp'>
-                        <script> document.getElementById('Hp').innerHTML = 'Hp : ' + t35.hp; </script>
-                    </div>
-                    <div id = 'Fuel'>
-                        <script> document.getElementById('Fuel').innerHTML = 'Fuel : ' + t35.fuel; </script>
-                    </div>
+                        <div id = 'Controls' class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
 
-                </div>
-                <div id = 'Controls'>
-                    <!--<button onclick = chooseTheTank()>Choose the tank</button>-->
-                    <ul>
-                        <li>
-                            <button onclick = t35.goFaster()> Speed up! </button>
-                        </li>
+                            <!--<div id = 'Controls'>-->
+                                    <!--<button onclick = chooseTheTank()>Choose the tank</button>-->
+                                   
+                                         <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                                            <button onclick = t35.goFaster()> Speed up! </button>
+                                         </div>
 
-                        <li>
-                            <button onclick = t35.turnLeft()> Turn Left </button>
+                                        <row>
+                                            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
+                                                <button onclick = t35.turnLeft()> Turn Left </button>
+                                            </div>
 
-                            <button id="Piy" onclick = t35.shot()> Piy piy! </button>
+                                            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
+                                                <button id="Piy" onclick = t35.shot()> Piy piy! </button>
+                                            </div>
 
-                            <button onclick = t35.turnRight()> Turn right </button>
-                        </li>
+                                            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
+                                                <button onclick = t35.turnRight()> Turn right </button>
+                                            </div>
+                                        </row>
 
-                        <li>
-                            <button onclick = t35.goSlower()> Slow down </button>
-                        </li>
-                    </ul>
-                </div>
+                                         <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                                            <button onclick = t35.goSlower()> Slow down </button>
+                                        </div>
+                                   
+                            <!--</div>-->
 
-                  <div class = 'Space'>
+                        </div>
 
-                   </div>
+                        <div id='space' class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
 
-                   <div class = 'Space'>
-
-                   </div>
+                        </div>
+                    <!--</div>-->
+                   
 
                </div>                
 

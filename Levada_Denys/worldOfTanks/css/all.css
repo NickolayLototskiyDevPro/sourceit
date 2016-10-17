@@ -1,53 +1,34 @@
-
-#Wrapper{
-	width: 90%;
-    height: 90%;
-    
-	margin: 0 auto;
-	position: relative;
+#Wrapper {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
     /*background: green;*/
 }
 
 #CentralDiv {
-   	width: 19em;
+    width: 19em;
     height: 19em;
-    top : 15%;
-    margin : 1em auto;
+    margin: 1em auto;
     background: crimson;
     border-radius: 10px;
-
 }
 
 #ControlsANdStatus {
-    width: 50em;
-    margin : 5 px auto;
     position: relative;
 }
 
-.space {
-width: 14%;
-height: 15em;
-display: inline-block;
-margin: 0 auto;
-}
-
 #Status {
-    display: inline-block;
-    vertical-align: top;
-	margin: 0 6px 10px 0;
     background: orange;
     border-radius: 10px;
-    width: 16%;
-    height: 15em;
     text-align: center;
 }
 
+
+/*#StatusWrapper {
+    width: 90%;
+}*/
+
 #Controls {
-    display: inline-block;
-    vertical-align: top;
-	margin: 0 6px 10px 0;
- 	width: 36%;
-    height: 15em;
     background: blue;
     border-radius: 10px;
     text-align: center;
@@ -58,16 +39,12 @@ button {
     width: 4em;
     height: 4em;
     margin: 10px 6px 10px 10px;
-
 }
 
 #Piy {
     border-radius: 50%;
 }
 
-ul {
-  
-}
 li {
     text-align: center;
     list-style-type: none;
