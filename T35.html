@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head meta charset="utf-8">
+<title> t35 fighting </title> 
+
+<script type="text/javascript"></script>
+<!--  <script src="./sa3.js"></script>*/-->
+<div>
+<p><input type="button" value="Fire tower 1!" onclick='st.fire()'></p>
+<p><input type="button" value="Fire tower 2!" onclick='st.fire()'></p>
+<p><input type="button" value="Fire tower 2! " onclick='st.fire()'></p>
+<p><input type="button" value="Fire tower 3!" onclick='st.fire()'></p>
+<p><input type="button" value="Fire tower 4!" onclick='st.fire()'></p>
+<p><input type="button" value="Fire tower 5!" onclick='st.fire()'></p>
+<p><input type="button" value="fast!" onclick='st.fast()'></p>
+<p><input type="button" value="slow!" onclick='st.slow()'></p>
+<p> 
+</div>
+<script>
+
+	
+var ammunition = 7
+
+function Tank (){
+
+	var MAX_SPEED = 60; 
+	this.wariors = 4;
+	this.realSpeed = 0; 
+	this.ammunition =  ammunition;
+	this.TankTower = 1;
+
+	this.fast = function(){
+				if (this.realSpeed > MAX_SPEED)  { alert('To fast')}
+				else {
+				var ns = this.realSpeed ++; 
+				this.realSpeed =this.realSpeed ++; 
+				alert ("Real speed " + ns+' mph');}
+		}
+		
+	this.slow = function(){	
+				if (this.realSpeed == 0 )  { alert('To slow')}
+				else { var nv = this.realSpeed --;
+				this.realSpeed =this.realSpeed --; 
+				alert ("Real speed " + nv + " mph");}
+				}
+	
+	function ammspeedcheck(){
+		
+		
+		if  (this.ammunition <= 0 || this.realSpeed > 40)
+	 {alert("Check ammo or decrease speed!")}
+		
+		else { var amm = this.ammunition-1 ;
+		
+	alert("Bang!!" )
+  	alert ("Ammunition left "+ amm + ' shell')
+  		
+	}
+		};
+	function reload() { this.ammunition -- }
+	
+	this.fire = function(){
+		setTimeout(ammspeedcheck.call(this), reload.call(this))}
+}
+	
+	 
+var st = new Tank();
+
+
+	
+
+</script></p>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
