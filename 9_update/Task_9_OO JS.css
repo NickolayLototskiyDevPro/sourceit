@@ -1,0 +1,84 @@
+.all {
+    position: relative;
+    height: 800px;
+    width: 800px;
+    background-color: ivory;
+    margin: 0 auto;
+}
+
+.tank {
+    position: absolute;
+    /*background-color: black;
+    width: 150px;
+    height: 150px;*/
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+}
+
+.buttons {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 250px;
+}
+
+.shot {
+    position: absolute;
+    top: 112.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-color: grey;
+    background-color: black;
+    outline: none;
+}
+
+.move_up {
+    position: absolute;
+    top: 20px;
+    right: 105px;
+    width: 45px;
+    height: 45px;
+}
+
+.move_down {
+    position: absolute;
+    bottom: 20px;
+    right: 105px;
+    width: 45px;
+    height: 45px;
+}
+
+.move_left {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+}
+
+.move_right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+}
+
+p, #speed, #ammunition, #crew, #fuel {
+    padding-left: 10px;
+    font-size: 115%;
+}

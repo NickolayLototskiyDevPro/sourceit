@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ООП</title>
+    <link rel="stylesheet" href="Task_9_OO JS.css">
+    <script src="Task_9_OO JS.js"></script>
+  </head>
+  <body>
+
+    <div class="all">
+
+      <div class="tank"><img src="tank_t35.jpg"></div>
+
+      <div class="buttons">
+        <input class="shot" type="button" onclick="t35.shot()">
+
+        <input class="move_up"     type="button" value="up"    onclick='t35.upSpeed(), t35.getfuel()'>
+        <input class="move_down"   type="button" value="down"  onclick="t35.downSpeed(), t35.getfuel()">
+        <input class="move_left"   type="button" value="left"  onclick="">
+        <input class="move_right"  type="button" value="right" onclick="">
+      </div>
+
+      <div class="info">
+        <p>Speed:       <span id='speed'></span>       </p>
+        <p>Fuel:        <span id="fuel"></span>        </p>
+        <p>Ammunition:  <span id='ammunition'></span>  </p>
+        <p>Crew:        <span id='crew'></span>        </p>
+      </div>
+
+    </div>
+
+  </body>
+</html>
