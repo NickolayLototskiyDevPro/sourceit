@@ -170,6 +170,7 @@ function unpairedNumber(num) {
             true;
         }
     }
+}
 
 
 
@@ -206,7 +207,7 @@ function tank() {
     tank.fuel = 100;
     tank.hp = 10;
     tank.team = 4;
-    tank.speed = 50;
+    tank.speed = 20;
     tank.maxSpeed = 60;
     tank.minSpeed = 0;
 
@@ -214,7 +215,7 @@ function tank() {
         if (tank.speed < tank.maxSpeed) {
             console.log(++tank.speed);
         } else {
-            console.log('Tank top speed of 60 km/h!')
+            console.log('Tank top speed of 60 km/h!');
         }
     };
 
@@ -240,9 +241,7 @@ function tank() {
 }
 
 var panzer = new tank();
-panzer.speedFaster();
-panzer.speedSlow();
-panzer.ammunitionLeft();
+
 
 
 
@@ -257,10 +256,10 @@ function addingRows() {
 
     for (var i = 0; i <= 9; i++) {
         bigMass.push(string);
-    }
+    };
 
     var bigString = bigMass.join(' ');
 
     console.log(bigString);
 
-}
+};

@@ -1,0 +1,50 @@
+.control {
+	position: absolute;
+	left: 50%;
+	margin-left: -85px;
+	bottom: 0;
+	width: 170px;
+	height: 162px;
+	background-color: #C2C2C2;
+	border-radius: 20px;
+	margin-bottom: 50px;
+}
+
+.control button {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #000;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.control button i {
+	color: #fff;
+}
+
+.control button:first-child,
+.control button:last-child {
+	margin: 10px auto 10px;
+}
+
+.control button:nth-child(2) {
+	margin-left: 11px;
+	margin-right: 10px;
+}
+
+.control button:nth-child(4) {
+	margin-left: 10px;
+}
+
+.control button:nth-child(2),
+.control button:nth-child(3),
+.control button:nth-child(4) {
+	display: inline-block;
+}
+
+.control button:nth-child(3) {
+	border-radius: 50%;
+	background-color: red;
+}
