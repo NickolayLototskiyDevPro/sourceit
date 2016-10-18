@@ -4,7 +4,9 @@
 <title> t35 fighting </title> 
 
 <script type="text/javascript"></script>
-<!--  <script src="./sa3.js"></script>*/-->
+<p>Put buttom "UP" to increase you speed </p>
+<p>Put buttom "DOWN" to decrease speed </p>
+<p>Put buttom "SPACE" to FIRE! </p>
 <div>
 <p><input type="button" value="Fire tower 1!" onclick='st.fire()'></p>
 <p><input type="button" value="Fire tower 2!" onclick='st.fire()'></p>
@@ -16,9 +18,24 @@
 <p><input type="button" value="slow!" onclick='st.slow()'></p>
 <p> 
 </div>
-<script>
 
-	
+<script >
+
+
+//-------keys control-------------------	
+document.onkeydown = function(e) {
+    e = e || window.event;
+    if (e.keyCode == 38) {
+      st.fast();
+    }
+    if (e.keyCode == 40) {
+      st.slow();
+    }
+    if (e.keyCode == 32) {
+      st.fire();
+    }
+  }
+//-------function log-------------------	
 var ammunition = 7
 
 function Tank (){
@@ -67,9 +84,9 @@ function Tank (){
 var st = new Tank();
 
 
-	
+</script>
 
-</script></p>
+
 	<title></title>
 </head>
 <body>
