@@ -3,7 +3,7 @@
 	display: block;
 	margin: 0 6px 10px 0;
 	position: absolute;
-	bottom: 70px;
+	bottom: 100px;
     left: 15px;
 	width: 100px;
 	height: 100px;
@@ -15,47 +15,47 @@
 	margin: 0 6px 10px 0;
 	position: absolute;
 	bottom: 50px;
-    left: 5px;
+    left: 50px;
 	width: 100px;
 	height: 100px;
 }
 .block3{
 	display: block;
 	position: absolute;
-    left: 60px;
+    left: 110px;
 }
 .but1{
 	position: fixed;
 	bottom: 150px;
-    left: 600px;
+    left: 650px;
     width: 100px;
 	height: 45px;
 }
 .but2{
 	position: fixed;
 	bottom: 50px;
-    left: 600px;
+    left: 650px;
     width: 100px;
 	height: 45px;
 }
 .but3{
 	position: fixed;
 	bottom: 100px;
-    left: 600px;
+    left: 650px;
     width: 100px;
 	height: 45px;
 }
 .but4{
 	position: fixed;
 	bottom: 100px;
-    left: 495px;
+    left: 545px;
     width: 100px;
 	height: 45px;
 }
 .but5{
 	position: fixed;
 	bottom: 100px;
-    left: 704.8px;
+    left: 754.8px;
     width: 100px;
 	height: 45px;
 }
