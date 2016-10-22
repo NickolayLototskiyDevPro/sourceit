@@ -1,0 +1,67 @@
+#game_field {
+	width: 400px;
+    height: 400px;
+    background:#000000;
+    border-radius: 25px;
+    position: absolute;
+    left:50%;
+	top:50%;
+	margin-left:-200px;
+	margin-top:-300px;
+}
+
+#tank_icon{
+
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-left:175px;
+    margin-top:175px;
+}
+
+.shoot{
+    background-color: red;
+}
+
+#events {
+	width:200px;
+    height:150px;
+    background: #FFDEAD;
+    border: 1px solid #8B7765;
+    border-radius: 20px;
+    position: absolute;
+    left:10%;
+	top:60%;
+	padding: 20px;
+}
+
+#nav {
+	width:200px;
+    height:120px;
+    background: #FFFFFF;
+    border: 1px solid #8B7765;
+    border-radius: 20px;
+    position: absolute;
+    left:50%;
+	top:75%;
+	margin-left:-120px;
+	padding: 10px;
+	text-align: center;
+}
+
+#selectTank {
+    position: absolute;
+    left:2%;
+    top:4%;
+}
+
+input[type="button"] {
+	border-radius: 10%;
+	margin: 5px;
+	padding: 6px;
+}
+
+#shoot {
+	border-radius: 100%;
+}
+
