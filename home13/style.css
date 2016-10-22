@@ -1,0 +1,72 @@
+body {
+	height: 97%;
+	position: absolute;
+	width: 99%;
+}
+
+.imagePanel {
+	height: 75%;
+	position: relative;
+	border: 1px solid;
+	
+}
+
+.controllPanel {
+	height: 25%;
+	
+}
+
+.buttonPanel1{
+	width: 30%;
+	height: 100%;
+	float: left;
+
+}
+
+.buttonPanel2{
+	width: 10%;
+	height: 100%;
+	float: left;
+}
+
+#idMoveUp, #idMoveDown{
+	width: 33%;
+	height: 33%;
+	margin-left: 33%;
+	margin-right: 33%; 
+}
+
+#idMoveLeft, #idMoveRight, #idShot{
+	width: 33%;
+	float: left;
+	height: 33%;
+}
+
+#idSpeedDown, #idSpeedUp{
+	width: 100%;
+	height: 50%;
+}
+
+.dataPanel{
+	height: 100%;
+	width: 60%;
+	float: right;
+}
+
+.outData{
+	padding: 5px;
+}
+
+.modelTank {
+	width: 20%;
+	height: 50px;
+	position: absolute;
+}
+
+#exampleTank1{
+	width: 10%;
+	height: 10%;
+	position: absolute;
+	background: black;
+}
+
