@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>11 Practise</title>
+	<script src='js/practise.js'></script>
+	<link rel = 'stylesheet' type = 'text/css' href = 'css/all.css'>
+</head>
+<body onclick = "alert('We can\`t handled event there')">
+	<button onclick ='event.stopPropagation()'> Click me</button> <!-- Отключить привязку.. прекращение всплытия -->
+
+	<div id = box>
+		Ok
+	</div>
+
+	<!-- <input id = 'box' type = 'button' value = 'Ok'/> -->
+
+	<form>
+		<input
+			value="Click me"
+			type = "button"
+			onclick= 'clicko()'
+			>
+	</form>
+<!--  -->
+
+
+	<button id = 'Button3'> Button 3 </button>
+<!--  -->
+
+	<div id ='elem1'>
+		<div id = 'elem2'>
+			<div id = 'elem3'>
+
+			</div>
+		</div>
+	</div>
+		
+
+
+<!--  -->
+
+ 		<script>
+			function sayHey () {
+				var say = 'Hey! ';
+				return function () {
+					alert(say);
+					say = say + say;
+				}
+			};
+
+			////////////////////////////////////
+
+			elem3.addEventListener('click', function() {alert('elem3');});
+
+			elem2.addEventListener('click', function () {alert('elem2')});
+			elem1.addEventListener('click', function() {alert('elem1')});
+			//////////////////////////////////////
+			box.addEventListener('click', sayHey());
+			box.addEventListener('click', sayHey());
+			box.onclick = function() {alert('hello!')};
+
+			/////////////////////////////
+
+
+			Button3.onclick = function(event) {
+				console.log(event);
+				alert(event.type + ' on ' + event.currentTarget);
+				alert(event.clientX + " : " + event.clientY);
+			}
+		</script>
+
+</body>
+</html>

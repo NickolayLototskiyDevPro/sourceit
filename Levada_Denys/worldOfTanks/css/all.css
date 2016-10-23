@@ -6,16 +6,23 @@
 }
 
 #CentralDiv {
-    width: 19em;
-    height: 19em;
+    width: 21em;
+    height: 21em;
     margin: 1em auto;
-    background: crimson;
+    background: lightgrey;
     border-radius: 10px;
 }
 
-#ControlsANdStatus {
-    position: relative;
+#tank {
+  border-radius: 3px; 
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 }
+
+/*#ControlsANdStatus {
+    position: relative;
+}*/
 
 #Status {
     background: orange;
@@ -48,4 +55,9 @@ button {
 li {
     text-align: center;
     list-style-type: none;
+}
+
+#controlsHint {
+    text-align: right;
+    line-height: 1;
 }

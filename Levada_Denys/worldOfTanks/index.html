@@ -1,85 +1,119 @@
 <html>
-    <head>
-        <title> World Of Tanks </title>
-                <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<head>
+    <title> World Of Tanks </title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        
-        <script src = 'js/worldOfTanks.js'> </script>
-        <link rel = 'stylesheet' type = 'text/css' href = 'css/all.css'>
-        </head>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-        <body>
-            <div id = 'Wrapper'>
-                
-                <div id = 'Centr' class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
-                    <div id = 'CentralDiv'>
+    <link rel='stylesheet' type='text/css' href='css/all.css'>
 
-                    </div>
+    <script src='js/jquery-3.1.1.min.js'></script>
+
+    <script src='js/worldOfTanks.js'></script>
+</head>
+
+<body>
+    <div id='Wrapper'>
+
+        <div id='Centr' class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+            <div id='CentralDiv'>
+                <img id='Tank' src='images/tank-small.png' alt='Tank'>
+
+            </div>
+        </div>
+
+        <div id='ControlsAndStatus' class="row">
+            <!--<div class="row">-->
+            <div id='Status' class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
+                <!--<div id = 'StatusWrapper'>-->
+                <div id='Speed'>
+                    <script>
+                        document.getElementById('Speed').innerHTML = 'Speed : ' + t35.speed;
+                    </script>
                 </div>
-               
-               <div id = 'ControlsAndStatus' class="row">
-                   <!--<div class="row">-->
-                        <div id = 'Status' class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
-                            <!--<div id = 'StatusWrapper'>-->
-                                <div id = 'Speed'>
-                                    <script> document.getElementById('Speed').innerHTML = 'Speed : ' + t35.speed; </script>
-                                </div>
-                                <div id = 'Ammo'>
-                                    <script> document.getElementById('Ammo').innerHTML = 'Ammo : ' + t35.ammo; </script>
-                                </div>
-                                <div id = 'Hp'>
-                                    <script> document.getElementById('Hp').innerHTML = 'Hp : ' + t35.hp; </script>
-                                </div>
-                                <div id = 'Fuel'>
-                                    <script> document.getElementById('Fuel').innerHTML = 'Fuel : ' + t35.fuel; </script>
-                                </div>
-                            <!--</div>-->
-                        </div>
+                <div id='Ammo'>
+                    <script>
+                        document.getElementById('Ammo').innerHTML = 'Ammo : ' + t35.ammo;
+                    </script>
+                </div>
+                <div id='Hp'>
+                    <script>
+                        document.getElementById('Hp').innerHTML = 'Hp : ' + t35.hp;
+                    </script>
+                </div>
+                <div id='Fuel'>
+                    <script>
+                        document.getElementById('Fuel').innerHTML = 'Fuel : ' + t35.fuel;
+                    </script>
+                </div>
+                <!--</div>-->
+            </div>
 
-                        <div id = 'Controls' class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
+            <div id='Controls' class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
 
-                            <!--<div id = 'Controls'>-->
-                                    <!--<button onclick = chooseTheTank()>Choose the tank</button>-->
-                                   
-                                         <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
-                                            <button onclick = t35.goFaster()> Speed up! </button>
-                                         </div>
+                <!--<div id = 'Controls'>-->
+                <!--<button onclick = chooseTheTank()>Choose the tank</button>-->
 
-                                        <row>
-                                            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
-                                                <button onclick = t35.turnLeft()> Turn Left </button>
-                                            </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                    <button onclick=t35.goFaster()> Speed up! </button>
+                </div>
 
-                                            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
-                                                <button id="Piy" onclick = t35.shot()> Piy piy! </button>
-                                            </div>
+                <row>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
+                        <button onclick=t35.turnLeft()> Turn Left </button>
+                    </div>
 
-                                            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
-                                                <button onclick = t35.turnRight()> Turn right </button>
-                                            </div>
-                                        </row>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
+                        <button id="Piy" onclick=t35.shot()> Piy piy! </button>
+                    </div>
 
-                                         <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
-                                            <button onclick = t35.goSlower()> Slow down </button>
-                                        </div>
-                                   
-                            <!--</div>-->
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
+                        <button onclick=t35.turnRight()> Turn right </button>
+                    </div>
+                </row>
 
-                        </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                    <button onclick=t35.goSlower()> Slow down </button>
+                </div>
 
-                        <div id='space' class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
-
-                        </div>
-                    <!--</div>-->
-                   
-
-               </div>                
+                <!--</div>-->
 
             </div>
 
-        </body>
+            <div id='controlsHint' class="col-sm-4 col-md-4 col-lg-4 col-xs-4">
+                <p>Controls : </p>
+                <p>W - goFaster </p>
+                <p>S - goSlower </p>
+                <p>A - turnLeft </p>
+                <p>D - turnRight </p>
+                <p>E - Shoot </p>
+            </div>
+            <!--</div>-->
+
+
+        </div>
+
+    </div>
+    <script>
+        function keyControls(event) {
+            if (event.keyCode === 87) {
+                t35.goFaster();
+            } else if (event.keyCode === 83) {
+                t35.goSlower();
+            } else if (event.keyCode === 65) {
+                t35.turnLeft();
+            } else if (event.keyCode === 68) {
+                t35.turnRight();
+            } else if (event.keyCode === 69) {
+                t35.shot();
+            }
+        }
+        //window.onkeydown = keyControls;
+        window.addEventListener('keydown', keyControls);
+    </script>
+</body>
+
 </html>
