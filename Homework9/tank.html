@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>TANK</title>
+		<script src = tank.js></script>
+		<script src = events.js></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class = "wrapper">
+			<div class = "header">
+				<h1>Tank's planet</h1>
+			</div>
+
+			<div class = "nav">
+				<div id = "content">
+					<img src="images/tankOnField.png" alt="" />
+				</div>
+			</div>
+			
+			<div class = "left-sidebar">
+				<ul>
+					<li>Speed: 0</li>
+					<li>Health: 0</li>
+					<li>Ammo: 0</li>
+				</ul>
+			</div>
+
+			<div class = "right-sidebar">
+				<ul>
+					<li>Team:</li>
+				</ul>
+			</div>
+
+			<div class = "footer">
+				<div id = "navigation">
+				<p>
+					<input type="image" src="images/top.png" name="image_button" onclick = "onClickUp()" id="top_button" class = "knopka"></p>
+				<p>
+					<input type="image" src="images/left.png" name="image_button" onclick = "onClickLeft()" id="left_button" class = "knopka">
+					<input type="image" src="images/Redbutton.png" name="image_button" onclick = "onClickFire()" class = "knopka">
+					<input type="image" src="images/right.png" name="image_button" onclick = "onClickRight()" id="right_button" class = "knopka">
+				</p>
+				<p>
+					<input type="image" src="images/down.png" name="image_button" onclick="onClickDown()" id="down_button" class = "knopka">
+				</p>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>
