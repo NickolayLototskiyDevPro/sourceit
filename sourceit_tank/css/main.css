@@ -1,0 +1,83 @@
+body{
+	padding: 0;
+	margin: 0;
+	min-height: 900px;
+	background: url(../img/back.jpg) no-repeat center;
+	background-size: cover;
+}
+.content{
+	margin-left: 39%;
+}
+.control{
+	border-radius: 50%;
+	height: 350px;
+	width: 350px;
+	background-color: transparent;
+	position: absolute;
+	top: 50%;
+	left: 43%;
+}
+
+#goUp{
+	position: absolute;
+  top: 1%;
+  right: 20%;
+}
+#goRight{
+	position: absolute;
+	bottom: 20%;
+  right: 1%;
+}
+#goBottom{
+	position: absolute;
+  bottom: 0%;
+  right: 20%;
+}
+#goLeft{
+	position: absolute;
+  bottom: 20%;
+  left: 1%;
+}
+#goFire{
+	position: absolute;
+  bottom: 25%;
+  right: 25%;
+}
+#goUp img,
+#goBottom img{
+  height: 100px;
+  width: 200px;
+}
+#goRight img,
+#goLeft img{
+  height: 200px;
+  width: 100px;
+}
+#goFire img{
+  height: 170px;
+  width: 170px;
+}
+
+#field {
+	width: 500px;
+	height: 300px;
+	border: 10px groove black;
+	background-color: #8c7575;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#tank {
+	display: block;
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
