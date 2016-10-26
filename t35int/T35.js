@@ -1,72 +1,47 @@
 'use strict'
 
-/*
-//-------keys control-------------------	
-document.onkeydown = function(e) {
-    e = e || window.event;
-    if (e.keyCode == 38) {
-      st.fast();
-    }
-    if (e.keyCode == 40) {
-      st.slow();
-    }
-    if (e.keyCode == 32) {
-      st.fire();
-    }
-  }
-//-------function log-------------------
 
 
-var ammunition = 7
+$(document).ready(function(){
 
-function Tank (){
+  $("#cntrright").click(function(){
+    $("#tank").css("left","200px");
+  });
+$("#cntrleft").click(function(){
+    $("#tank").css("left","-200px");
+  });
+$("#cntrsup").click(function(){
+    $("#tank").css("top","-250px");
+  });
+$("#cntrsdown").click(function(){
+    $("#tank").css("top","250px");
+  });
 
-	var MAX_SPEED = 60; 
-	this.wariors = 4;
-	this.realSpeed = 4; 
-	this.ammunition =  ammunition;
-	this.TankTower = 1;
 
-	this.fast = function(){
-				if (this.realSpeed > MAX_SPEED)  { alert('To fast')}
-				else {
-				var ns = this.realSpeed ++; 
-				this.realSpeed =this.realSpeed ++; 
-				alert ("Real speed " + ns+' mph');}
-		}
-		
-	this.slow = function(){	
-				if (this.realSpeed == 0 )  { alert('To slow')}
-				else { 	
-					var nv = this.realSpeed --;
-					this.realSpeed =this.realSpeed --;
-				alert ("Real speed " + nv + " mph");}
-				}
-	
-	function ammspeedcheck(){
-		
-		
-		if  (this.ammunition <= 0 || this.realSpeed > 40)
-	 {alert("Check ammo or decrease speed!")}
-		
-		else { var amm = this.ammunition-1 ;
-		
-	alert("Bang!!" )
-  	alert ("Ammunition left "+ amm + ' shell')
-  		
-	}
-		};
-	function reload() { this.ammunition -- }
-	
-	this.fire = function(){
-		setTimeout(ammspeedcheck.call(this), reload.call(this))}
-}
-	 
-var st = new Tank();
 
-//-----Display control--------------------
-*/
-//-------keys control-------------------
+$("#game").click(function(){
+    $("#heat").css("background-color","red");
+    $("#game").css("background-color","yellow");
+    $("#coord").css("display","block");
+  
+    $("#game").val("Finish");
+  });
+
+
+
+
+
+$("#butfire").click(function(){
+
+$("#tank").css("background-color","red",100);
+  });
+
+  });
+
+
+
+
+
 
 function fire() {st.fire()};
 function spUp() {st.fast()};
@@ -74,18 +49,20 @@ function spDn() {st.slow()};
 function turnL() {st.turnL()};
 function turnR() {st.turnR()};
 
-function ammload(sq){
+
+function ammload(){
 	var squantity = document.getElementById("squantity").value;
 	var div = document.createElement("div");
-	
 	div.innerHTML = "Now "+ squantity+ " shells load";
 	document.getElementById("amm load").appendChild(div);
-alert(squantity);
-this.sq=squantity;
 }
-
-
-
+function fuelload(){
+	var quantity = document.getElementById("quantity").value;
+	var div = document.createElement("div");
+	div.innerHTML = "Now fuel is "+quantity+ " liters";
+	document.getElementById("fuel load").appendChild(div); return false;
+	
+}
 
 
 document.onkeydown = function(e) {
@@ -100,64 +77,106 @@ document.onkeydown = function(e) {
       st.fire();
     }
   }
+
+function makeCounter() {
+  var currentCount = 1;
+  return function() { 
+    return currentCount++;
+  };}
+var counter = makeCounter();
+
+function makeCounter() {
+  var currentCount = 1;
+  return function() { 
+    return currentCount++;
+  };}
+var counterf = makeCounter();
+
+
+
 //-------function log-------------------
 
 var realSpeed = 1;
-var ammunition =5;
 function Tank (){
 
 	var MAX_SPEED = 60; 
 	this.wariors = 4;
-	this.realSpeed = realSpeed; 
-	this.ammunition =  ammunition;
+	this.realSpeed = 0; 
 	this.TankTower = 1;
 
 	this.fast = function(){
-				if (this.realSpeed > MAX_SPEED)  { alert('To fast')}
-				else {
+				var fuelq = document.getElementById("quantity").value;
+				this.fuel= fuelq;
+				var aff = this.fuel - counterf()
+
+				if (this.realSpeed > MAX_SPEED )  { alert('To fast');
+			}else if (aff < 0){
+				alert ("No fuel")
+			}
+				else { 
+
+
+				var tank=document.getElementById("tank");
+				tank.style.top='-50px';
+
 				this.realSpeed ++;	
 				var ns = this.realSpeed; 
-				alert ("Real speed " + ns+' mph');
-				return;}
+				document.getElementById('txt2').innerHTML=ns;
+				document.getElementById('txt3').innerHTML=aff;
+				return ;}
 				
 		}
 		
 	this.slow = function(){	
-				if (this.realSpeed == 0 )  { alert('To slow')}
-				else { 	
+				var fuelq = document.getElementById("quantity").value;
+				this.fuel= fuelq;
+				var aff = this.fuel - counterf()
+				if (this.realSpeed == 0 )  { alert('To slow');
+			}else if(aff <0){alert ("No fuel")}
+				else { 
+					
+				var tank=document.getElementById("tank");
+				tank.style.top='50px';	
+				
 				this.realSpeed --;
 				var nv = this.realSpeed ;
-				alert ("Real speed " + nv + " mph");
+				document.getElementById('txt2').innerHTML=nv;
+				document.getElementById('txt3').innerHTML=aff;
 				return;}
 		}
 		
 	function ammspeedcheck(){
-			
-				if  (this.ammunition <= 0 || this.realSpeed > 40)
-	 			{alert("Check ammo or decrease speed!")}
+			    var squantity = document.getElementById("squantity").value;
+				this.ammunition = squantity;
+				var amm = this.ammunition - counter()
+				if  (this.realSpeed > 40  )
+	 			{alert("Decrease speed! To fast for fighting");
+	 		}else if (amm<0){alert("No ammo!")}
 				
-				else { var amm = this.ammunition-1 ;
+				else {  
+				
+				document.getElementById('txt1').innerHTML=amm;
 				alert("Bang!!" )
-  				alert ("Ammunition left "+ amm + ' shells')
-
-  		}
+  				 }
 		};
-	function reload() { this.ammunition --; }
+
+	function reload() { this.ammunition ; }
 	
 	
 				this.fire = function(){
 
-				setTimeout(ammspeedcheck.call(this), reload.call(this))}
-}
+				setTimeout(ammspeedcheck.call(this), reload.call(this));}
 
+				
+				this.turnL = function(){
+					var tank=document.getElementById("tank");
+				tank.style.right='50px';
+				};
+				
 
-function fuelload(){
-	var quantity = document.getElementById("quantity").value;
-	var div = document.createElement("div");
-	div.innerHTML = "Now fuel is "+quantity+ " liters";
-	document.getElementById("fuel load").appendChild(div); return false;
-	alert(quantity);
 }
+			
+
 
 
 

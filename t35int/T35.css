@@ -1,6 +1,38 @@
+#heat {
+	width:100%;
+	height: 50px;
+	background-color: white;
+	border: 1px solid black;
+	content: "dfda";
+}
+#game{
+	width: 300px;
+	height: 100px;
+	
+	margin-left: 39%;
+	margin-top:20px; 
+	border: 3px solid red;
+	border-radius: 20px;
+	 padding:0.8em 1.5em 1.5em 1.7em;
+	 background-color: red;
+	 font-size:35px; }
+
+
+
+
+#coord{
+	display:none;
+	margin-left: 50%;
+	margin-top:6px;
+	font-size:35px;
+	color: white;
+
+
+}
+
 #container{
 border: 0px solid black;
-	height: 550px;
+	height: 700px;
 	width: 1200px;
 	overflow: hidden;
 	margin-top: 10px;
@@ -9,20 +41,19 @@ border: 0px solid black;
 #tank{
 	width: 80px;
 	height: 80px;
-	border:1px solid black;
-		position: absolute;
-	margin-left: 40%;
-	margin-right: 40%;
-	margin-top:  84%;
-	background-color: grey;
-	content:url(http://cdn.droidtune.com/wp-content/uploads/2013/01/%D0%A2%D0%B0%D0%BD%D1%87%D0%B8%D0%BA%D0%B8-1990-android.png)
+	border:1px solid white;
+	position: relative;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top:  420px;
+	content:  url(http://cdn.droidtune.com/wp-content/uploads/2013/01/%D0%A2%D0%B0%D0%BD%D1%87%D0%B8%D0%BA%D0%B8-1990-android.png)
 
 }
 #warzone{
 	width: 500px;
 	height: 500px;
-	background-color: #fff;
-	border: 3px solid #606;
+	background-color: black;
+	border: 3px solid black;
 	margin-right:  10%;
 	position:relative; 
 	float: left;
@@ -34,7 +65,7 @@ border: 0px solid black;
 	width: 500px;
 	height: 500px;
 	background-color: #fff;
-	border: 3px solid #606;
+	border: 3px solid black;
 	position:relative; 
 	text-align: center;
 	display: inline-block;
@@ -48,7 +79,7 @@ border: 0px solid black;
 	height: 100px;
 	background-color: grey;
 	position: absolute;
-	margin: 66%;
+	margin: 63%;
 	margin-top:  36%;
 	border: 3px solid #606;
 	border-radius: 10px;

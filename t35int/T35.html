@@ -5,6 +5,8 @@
 
 <title> t35 fighting </title> 
 <link rel="STYLESHEET" type="text/css" src="T35.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 <script type="text/javascript" src = "T35.js"></script>
 <table border="1">
 <tr><td>
@@ -16,24 +18,43 @@
 
 <p>Fuel load</p>
 <input type="text" value="" id="quantity">
-        <input type="button" value="liters load" id="fload" onclick="fuelload()">
-        <div id="fuel load"></div>	
+<input type="button" value="liters load" id="fload" onclick="fuelload()">
+<div id="fuel load"></div>	
 </td>
 <td>
 
 <p>Ammunition load</p>
-<input type="text" value="" id="squantity">
-        <input type="button" value="Shells load"  onclick="ammload()">
-        	 <div id="amm load"></div>
-        	 </td>
+<input type="text" value="" id='squantity'>
+<input type="button" value="Shells load"  onclick="ammload()">
+ <div id="amm load"></div>
+</td>
+</td>
+<td>
+<p>Ammunition left</p>
+<div id='txt1'></div>
+</td>
+<td>
+<p>Current speed</p>
+<div id='txt2'></div>
+</td>
+
+<td>
+<p>fuel left</p>
+<div id='txt3'></div>
 </td>
 </tr>
+<div id ="heat">
+	
+<div id="coord">On-line </div>
 
+</div>
 </table>
+
 <div>
 
 <p>  
 </div>-->
+
 <div id = "container">
 	<div id = "cntrzone">
 		<div id="cntrsup">Fast</div>
@@ -46,11 +67,20 @@
 		<div class = "image" id = "tank" >...
 		</div>
 	</div>
+	<form>
+	<input type="button" id ="game" value ="Start game" >
+
+	
+	</form>
+
 </div>
 
 <style>
   #butfire {background: white}
   #butfire:hover {background: red}
+
+#game:active { background: white; }
+
 </style>
 
 
@@ -59,6 +89,7 @@
 	butfire.addEventListener("click",fire)
 	cntrsup.addEventListener("click",spUp)
 	cntrsdown.addEventListener("click",spDn)
+	cntrleft.addEventListener("click",turnL)
 	
 </script>
 
