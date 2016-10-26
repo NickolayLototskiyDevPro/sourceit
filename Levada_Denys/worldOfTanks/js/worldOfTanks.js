@@ -34,7 +34,7 @@ function MoveTank(mTop, mLeft, mBottom, mRight) {
         if (newBottom >= -263) {
             $("#Tank").css("bottom", newBottom);
             $("#Tank").css("top", "0px");
-        } else if (newBottom < -263) {
+        } else {
             newBottom = -263;
             $("Tank").css("bottom", newBottom);
             $("#Tank").css("top", "0px");
@@ -154,6 +154,21 @@ function chooseTheTank() {
         alert('There are no such tanks!')
     }
 }
-
 //var tanky = chooseTheTank ();
 //console.log(tanky.goSlower());
+
+var isGameStart = 0;
+
+function startFinishGame() {
+    if (isGameStart === 0) {
+        isGameStart = 1;
+        document.getElementById('onlineStatus').innerHTML = 'Online';
+        $('#onlineStatus').css('background', 'green');
+        document.getElementById('startFinishButton').innerHTML = 'Finish Game';
+    } else if (isGameStart === 1) {
+        isGameStart = 0;
+        document.getElementById('onlineStatus').innerHTML = 'Offline';
+        $('#onlineStatus').css('background', 'red');
+        document.getElementById('startFinishButton').innerHTML = 'Start Game';
+    }
+}

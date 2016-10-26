@@ -5,12 +5,19 @@
     /*background: green;*/
 }
 
+#onlineStatus {
+    height: 1em;
+    text-align: center;
+    line-height: 1em;
+}
+
 #CentralDiv {
     width: 21em;
     height: 21em;
     margin: 1em auto;
     background: lightgrey;
     border-radius: 10px;
+    margin-top: 0;
 }
 
 #tank {
