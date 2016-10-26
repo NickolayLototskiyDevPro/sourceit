@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body {
+	background: url(images/tank.jpg);
+	background-size: cover;
+	height: auto;
+	margin:0;
+	font: 14px Arial, Verdana, Tahoma, sans-serif;
+	color: #afb385;
+	text-shadow: 2px 2px 5px #000;
+}
+
+h1 {
+	color: #3d0f0f;
+	text-shadow: 1px 1px 7px #000;
+	text-align: center;
+	font-size: 60px;
+}
+
+h2{
+	color: #3cd713;
+}
+
+ul li{
+	list-style-type: none;
+	padding: 10px 18px 10px;
+	font-size: 25px;
+}
+
+.wrapper{
+	width: 1000px;
+    height: 100%;
+ 	margin: 0 auto;
+ 	position: relative;
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.nav{
+	width: 80%;
+	height: 50%;
+	margin: 20px auto;
+}
+
+#field{
+	margin: 40px auto;
+	background-color: #341c02;
+	width: 500px;
+	height: 350px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 4px #000;
+	opacity: 0.95;
+}
+
+#field img{
+	margin: 50px;
+}
+
+.left-sidebar{
+	width: 250px;
+	height: 320px;
+	position: fixed;
+	left: 10px;
+	bottom: 20%;
+	background-color: #27530a;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 5px #152f03;
+}
+
+.right-sidebar{
+	width: 250px;
+	height: 320px;
+	position: fixed;
+	right: 10px;
+	bottom: 20%;
+	background-color: #27530a;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 5px #152f03;
+}
+
+#navigation{
+	position: fixed;
+	bottom: 0;
+	left: 43%;
+}
+
+
+input{
+	outline: none;
+} 
+
+#top_button, #down_button{
+	margin-left: 72px;
+}
+
+.knopka:active{
+	opacity: 0.8;
+}
+
+#start{
+	width: 100px;
+	height: 40px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 10px;
+	background-color: #dee022;
+	
+
+}
+
+
+
+
+
+	
+
+
+	
+	
+
+
+
+
+
