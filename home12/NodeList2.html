@@ -22,21 +22,29 @@
     } else this.upLink = null;
     this.data = data;
   }
+  
+  function CreateNodeJSON(data, parentNode) {
+    CreateNode.apply(this, arguments);
+  }
 
-  var upper = new CreateNode('level1');
+  CreateNodeJSON.prototype = Object.create(CreateNode.prototype);
+  CreateNodeJSON.constructor = CreateNodeJSON;
 
-  var node21 = new CreateNode('level2-1', upper),
-      node22 = new CreateNode('level2-2', upper),
-      node23 = new CreateNode('level2-3', upper),
-      node31 = new CreateNode('level3-1', node21),
-      node41 = new CreateNode('level4-1', node31),
-      node51 = new CreateNode('level5-1', node41),
-      node24 = new CreateNode('level2-4', upper),
-      node32 = new CreateNode('level3-2', node22),
-      node33 = new CreateNode('level3-3', node23),
-      node34 = new CreateNode('level3-4', node23),
-      node42 = new CreateNode('level4-2', node32),
-      node52 = new CreateNode('level5-2', node42);
+
+  var upper = new CreateNodeJSON('level1');
+
+  var node21 = new CreateNodeJSON('level2-1', upper),
+      node22 = new CreateNodeJSON('level2-2', upper),
+      node23 = new CreateNodeJSON('level2-3', upper),
+      node31 = new CreateNodeJSON('level3-1', node21),
+      node41 = new CreateNodeJSON('level4-1', node31),
+      node51 = new CreateNodeJSON('level5-1', node41),
+      node24 = new CreateNodeJSON('level2-4', upper),
+      node32 = new CreateNodeJSON('level3-2', node22),
+      node33 = new CreateNodeJSON('level3-3', node23),
+      node34 = new CreateNodeJSON('level3-4', node23),
+      node42 = new CreateNodeJSON('level4-2', node32),
+      node52 = new CreateNodeJSON('level5-2', node42);
 
 
 
@@ -53,6 +61,11 @@
 
 
   revNodeList(upper, console.log);
+  
+  var str = JSON.stringify(upper, ['data', 'downLink']);
+  console.log(str);
+
+  
 
 
 
