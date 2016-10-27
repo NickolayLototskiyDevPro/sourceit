@@ -1,5 +1,8 @@
 'use strict'
 
+document.onkeydown = KeyPress;
+var isGameStart;
+
 function Tank (){
 
  this.Speed = 0;
@@ -81,6 +84,50 @@ this.fire = function (Bullets){
 	}
 }
 
+function KeyPress(e){
+	e = e || window.event;
+	switch (e.keyCode){
+		case 37:
+			cab.left(cab.Degrees--); move(-1, 0);
+			break;
+		case 38:
+			cab.boost(cab.Speed++); move(0, -1);
+			break;
+		case 39:
+			cab.right(cab.Degrees++); move(1, 0);
+			break;
+		case 40:
+			cab.slow(cab.Speed--); move(0, 1);
+			break;
+		case 13:
+			cab.fire(cab.Bullets--);
+			break;
+		default:
+			break;
+	}
+}
+
+buttonStart.onclick = function() {
+
+	if (isGameStart == false) {
+
+	isGameStart = true;
+	header.innerHTML = 'Online';
+	header.style.backgroundColor = 'red';
+	buttonStart.value = 'Finish Game!';
+
+	} 
+
+	else {
+
+	isGameStart = false;
+	header.innerHTML = 'Offline';
+	header.style.backgroundColor = 'blue';
+	buttonStart.value = 'Start Game!';
+
+	}
+}
+
 var block3 = null;
 		function move(vX, vY) {
 				var x = block3.offsetLeft + vX * 20;
@@ -95,7 +142,9 @@ var block3 = null;
 		}
 
 var cab = new Tank();
+
 setTimeout(function() { alert('Armor is ' + cab.Armor + '%' +' \nFuel is ' + cab.Fuel + '%' + ' \nCrew is ' + cab.Crew + ' persons'); }, 1000);
+
 up.onclick = function() {cab.boost(cab.Speed++); move(0, -1);};
 down.onclick = function() {cab.slow(cab.Speed--); move(0, 1);};
 fire.onclick = function() {cab.fire(cab.Bullets--);};
