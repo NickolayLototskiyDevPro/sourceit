@@ -65,7 +65,9 @@
   var str = JSON.stringify(upper, ['data', 'downLink']);
   console.log(str);
 
-  
+  var upperRestore = JSON.parse(str);
+  revNodeList(upperRestore, console.log);
+ 
 
 
 
