@@ -12,22 +12,49 @@
     <div id='centralDiv' class='col-xs-4 col-sm-4 col-md-4 col-lg-4'>
         <!--<div id='center'>-->
         <div class="row">
-            <div id="1" class="block">1</div>
-            <div id="2" class="block">2</div>
-            <div id="3" class="block">3</div>
+            <div id="1" class="block"></div>
+            <div id="2" class="block"></div>
+            <div id="3" class="block"></div>
         </div>
         <div class="row">
-            <div id="4" class="block">4</div>
-            <div id="5" class="block">5</div>
-            <div id="6" class="block">6</div>
+            <div id="4" class="block"></div>
+            <div id="5" class="block"></div>
+            <div id="6" class="block"></div>
         </div>
         <div class="row">
-            <div id="7" class="block">7</div>
-            <div id="8" class="block">8</div>
-            <div id="9" class="block">9</div>
+            <div id="7" class="block"></div>
+            <div id="8" class="block"></div>
+            <div id="9" class="block"></div>
         </div>
         <!--</div>-->
+        <button id='reset'> Reset Game </button>
     </div>
+
+
+    <script>
+        game.arrangeBox();
+        game.fillBox();
+
+        function keyControls(event) {
+            if (event.keyCode === 87) {
+                game.controls_up();
+            } else if (event.keyCode === 83) {
+                game.controls_down();
+            } else if (event.keyCode === 65) {
+                game.controls_left();
+            } else if (event.keyCode === 68) {
+                game.controls_right();
+            }
+        }
+
+        window.addEventListener('keydown', keyControls);
+        $("#reset").click(function() {
+            game.box = [];
+            game.arrangeBox();
+            game.fillBox();
+            game.checkBox();
+        })
+    </script>
 </body>
 
 </html>
