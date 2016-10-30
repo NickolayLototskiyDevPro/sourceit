@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+	box-shadow: 1px 1px 10px rgba(245, 245, 220 ,0.5);
+	background-color: #1C1C1C;
+	color: #F5F5DC;
+	text-align: center;
+	font: bold italic 20px Century Gothic, Futura, Trebuchet MS, Garamond, Helvetica, sans-serif;
+}
+
+
+#wrapper {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: center;
+}
+
+#gameField {
+	width: 400px;
+    height: 400px;
+    background: #F5F5DC;
+    border-radius: 25px;
+    border: 2px solid #1C1C1C;
+    position: absolute;
+    left:50%;
+	top:50%;
+	margin-left:-200px;
+	margin-top:-250px;
+	box-shadow: 0 0 10px rgba(245, 222, 179, 0.5);
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: center;
+	overflow: hidden;
+}
+
+#button {
+	width: 300px;
+    height: 80px;
+    background: #F5F5DC;
+    border-radius: 25px;
+    border: 2px solid #1C1C1C;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 40px;
+    line-height: 80px;
+    overflow: hidden;
+}
+
+#button > div {
+	width: 294px;
+    height: 74px;
+    border-radius: 8px;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 3px;
+    line-height: 74px;
+}
+
+#gameField > div {
+	width: 95px;
+    height: 95px;
+    border: 2px solid #FFF;
+    position: relative;
+	border-radius: 8px;
+	box-shadow: 1px 1px 10px rgba(245, 245, 220 ,0.5);
+	background-color: #1C1C1C;
+	color: #F5F5DC;
+	text-align: center;
+	font: bold italic 20px Century Gothic, Futura, Trebuchet MS, Garamond, Helvetica, sans-serif;
+	line-height: 95px;
+}
+
+#gameField > div.empty {
+
+	background: #F5F5DC;
+	border: none;
+	box-shadow: none;
+}
+
+.win {
+
+	background: #FFA500;
+	padding-top: 150px;
+	width: 400px;
+	color: #F5F5DC;
+	text-align: center;
+	font: bold italic 70px Century Gothic, Futura, Trebuchet MS, Garamond, Helvetica, sans-serif;
+
+}
+
+#button > div.win {
+	padding-top: 0px;
+	font-size: 30px;
+	margin: 0;
+	width: 300px;
+    height: 80px;
+}
