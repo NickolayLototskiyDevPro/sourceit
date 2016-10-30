@@ -1,0 +1,30 @@
+#centralDiv {
+    position: absolute;
+    width: 70%;
+    /*height: 90%;*/
+    background: lightblue;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#center {
+    margin: 0 auto;
+}
+
+.row {
+    height: 170px;
+    /*top: 0; left: 0; right: 0; bottom: 0;*/
+    /*background: white;*/
+    /*margin: 1em auto;*/
+}
+
+.block {
+    display: inline-block;
+    background: wheat;
+    width: 150px;
+    height: 150px;
+    margin: 1em auto;
+}
