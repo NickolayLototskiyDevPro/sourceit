@@ -1,0 +1,20 @@
+.box_background{
+    width: 400px;
+    height: 400px;
+    background-color: #3e228c;
+}
+.box{
+    border: 5px groove;
+    width: 400px;
+    height: 400px;
+    border-color:#653ed2;
+    text-align-last: center;
+    
+}
+td{
+    border: 2px solid;
+    text-align-last: center;
+    border-radius:10px ;
+    border-color: beige;
+    background-color: beige;
+}
