@@ -1,26 +1,37 @@
 @import url(reset.css);
 
-.content{
+#wrapper{
+	
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#content{
 	display: block;
 	position: relative;
-	height: 500px;
+	height: 400px;
 	width: 100%;
-		.T_35{
+	border: 1px solid black;
+		#T_35{
 		display: block;
 		background: black;
-		width: 100px;
-		height: 100px;
-		top: 50%;
+		width: 35px;
+		height: 35px;
+		top: 37%;
 		left: 50%;
 		position: absolute;
-
+		 -webkit-transition: all 1s;
+      	-moz-transition: all 1s;
+      	-o-transition: all 1s;
+      	-ms-transition: all 1s;
+     	 transition: all 1s;
 		}
 }
 .indicators{
 	display: inline-block;
 	width: 30%;
 	border: 1px solid black;
-	margin: 5px;
+	
 	background: yellow;
 	.indicatName{		
 		margin: 20px 20px;
@@ -41,23 +52,23 @@
 }
 .pannel{
 	display: inline-block;
-	width: 45%;
+	width: 50%;
 	form{
 		outline: none;
 		margin: 20px 20px;
-		.speed_up, .speed_down{
-			width: 21%;
+		#speed_up, #speed_down{
+			width: 23%;
 			margin: 15px auto;
 			display: block;
 		}
-		.maneuver_right, .maneuver_left, .kill{
-			width: 21%;
+		#maneuver_right, #maneuver_left, #kill{
+			width: 23%;
 			margin: 15px 25px;
 		}
-		.maneuver_right{
+		#maneuver_right{
 			float: right;
 		}
-		.kill{
+		#kill{
 			width: 60px;
 			border-radius: 30px;
 			height: 60px;
