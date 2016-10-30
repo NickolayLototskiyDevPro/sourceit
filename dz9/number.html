@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	'use strict'
+		
+		function numb() {
+
+			var input = document.getElementById('input').value;
+			var result = Math.sign(input);
+
+			if (result >= 1){
+
+				alert('You number is positive!');
+			}
+
+			if (result <= -1){
+
+				alert('You number is negative!');
+			}
+
+			if (result == 0){
+
+				alert('You number is 0');
+			}
+		}
+
+	</script>
+</head>
+<body>
+input=<input type="text" id='input' size='5'>
+<input type="button" value="Число" onclick="numb()">
+</body>
+</html>
