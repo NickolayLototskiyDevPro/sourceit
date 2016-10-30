@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game</title>
+	
+<style>
+
+#block{
+	width:200px;
+	line-height:30px;
+	text-align:center;
+	position: fixed;
+	left: 50px;
+	top: 50px;
+}
+#block div{
+	float:left;
+	width:50px;
+	height:50px;
+	border:1px solid #ccc;
+	margin:2px;
+}
+#mother{
+	position: fixed;
+	width: 200px;
+	line-height:30px;
+	text-align:center;
+	left: 300px;
+	top: 50px;
+}
+.blocks{
+	float:left;
+	width:50px;
+	height:50px;
+	border:1px solid #ccc;
+	margin:2px;
+	background: green;
+}
+</style>
+
+</head>
+<body>
+<div id="block"></div>
+<div id="mother">
+	<div class = "blocks" id="one"   > </div>
+	<div class = "blocks" id="two"   >1</div>
+	<div class = "blocks" id="three" >2</div>
+	<div class = "blocks" id="four"  >3</div>
+	<div class = "blocks" id="five"  >4</div>
+	<div class = "blocks" id="six"   >5</div>
+	<div class = "blocks" id="seven" >6</div>
+	<div class = "blocks" id="eight" >7</div>
+	<div class = "blocks" id="nine"  >8</div>
+</div>
+</body>
+<script>
+
+var divs = [];
+
+for (var i = 0; i < 9; i++)
+divs[i] = '<div>' + (i % 9) + '</div>';
+
+document.getElementById('block').innerHTML = divs.join('');
+
+</script>
+</html>
