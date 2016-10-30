@@ -1,47 +1,32 @@
 'use strict'
 
-
-
 $(document).ready(function(){
 
-  $("#cntrright").click(function(){
-    $("#tank").css("left","200px");
-  });
-$("#cntrleft").click(function(){
-    $("#tank").css("left","-200px");
-  });
-$("#cntrsup").click(function(){
-    $("#tank").css("top","-250px");
-  });
-$("#cntrsdown").click(function(){
-    $("#tank").css("top","250px");
-  });
+ 
+var status_game = "Start"
+$("#game").click(function () {
 
-
-
-$("#game").click(function(){
-    $("#heat").css("background-color","red");
-    $("#game").css("background-color","yellow");
-    $("#coord").css("display","block");
+    if (status_game === "Start"){
+        status_game = "Finish";
+        	$("#heat").css("background-color","red");
+   			$("#game").css("background-color","green");
+    		$("#coord").css("display","block");
   
     $("#game").val("Finish");
+
+    }else if (status_game === "Finish"){
+        status_game = "Start";
+       		$("#heat").css("background-color","green");
+    		$("#game").css("background-color","red");
+      		$("#game").val("Star Game");
+      		$("#coord").css("display","none");
+
+    }
+});
+
+
+
   });
-
-
-
-
-
-$("#butfire").click(function(){
-
-$("#tank").css("background-color","red",100);
-  });
-
-  });
-
-
-
-
-
 
 function fire() {st.fire()};
 function spUp() {st.fast()};
@@ -111,20 +96,22 @@ function Tank (){
 
 				if (this.realSpeed > MAX_SPEED )  { alert('To fast');
 			}else if (aff < 0){
-				alert ("No fuel")
+				alert ("No fuel, load fuel on you tank")
 			}
 				else { 
-
-
-				var tank=document.getElementById("tank");
-				tank.style.top='-50px';
-
+						$("#tank").offset(function (i, Tank) {
+            			var New_Coord = {};
+            			var z = Tank.top
+         				if (z < 261){alert("Return to warzone!")}
+            			else{
+            			New_Coord.top = Tank.top - 10;
+            			return New_Coord;}
+        })
 				this.realSpeed ++;	
 				var ns = this.realSpeed; 
 				document.getElementById('txt2').innerHTML=ns;
 				document.getElementById('txt3').innerHTML=aff;
 				return ;}
-				
 		}
 		
 	this.slow = function(){	
@@ -132,18 +119,62 @@ function Tank (){
 				this.fuel= fuelq;
 				var aff = this.fuel - counterf()
 				if (this.realSpeed == 0 )  { alert('To slow');
-			}else if(aff <0){alert ("No fuel")}
+			}else if(aff <0){alert ("No fuel, load fuel on you tank")}
 				else { 
 					
-				var tank=document.getElementById("tank");
-				tank.style.top='50px';	
-				
+					
+						$("#tank").offset(function (i, Tank) {
+            			var New_Coord = {};
+            			New_Coord.top = Tank.top + 10;
+            			return New_Coord;
+        })
 				this.realSpeed --;
 				var nv = this.realSpeed ;
 				document.getElementById('txt2').innerHTML=nv;
 				document.getElementById('txt3').innerHTML=aff;
 				return;}
 		}
+
+		this.turnL =  function(){	
+				var fuelq = document.getElementById("quantity").value;
+				this.fuel= fuelq;
+				var aff = this.fuel - counterf()
+				if(aff <0){alert ("No fuel, load fuel on you tank")}
+				else { 
+				document.getElementById('txt3').innerHTML=aff;
+
+						$("#tank").offset(function (i, Tank) {
+            			var New_Coord = {};
+            			var y =Tank.left;
+       					if (y < 2.4) {alert("Return to warzone!")}
+            			else{ 
+            				New_Coord.left = Tank.left - 10;
+            				return New_Coord;}
+            			})
+
+            			
+            			
+			 	
+				}};
+
+		this.turnR =  function(){	
+				var fuelq = document.getElementById("quantity").value;
+				this.fuel= fuelq;
+				var aff = this.fuel - counterf()
+				if(aff <0){alert ("No fuel, load fuel on you tank")}
+				else { 
+				document.getElementById('txt3').innerHTML=aff;
+
+						$("#tank").offset(function (i, Tank) {
+            			var New_Coord = {};
+            			var x =Tank.left;
+            			if (x > 441) {alert("Return to warzone!")}
+            			else{ 
+            				New_Coord.left = Tank.left + 10;
+            				return New_Coord;}
+            			})
+			 	
+				}};
 		
 	function ammspeedcheck(){
 			    var squantity = document.getElementById("squantity").value;
@@ -151,13 +182,18 @@ function Tank (){
 				var amm = this.ammunition - counter()
 				if  (this.realSpeed > 40  )
 	 			{alert("Decrease speed! To fast for fighting");
-	 		}else if (amm<0){alert("No ammo!")}
+	 		}else if (amm<0){alert("No ammo! Load ammo!")}
 				
 				else {  
 				
 				document.getElementById('txt1').innerHTML=amm;
 				alert("Bang!!" )
-  				 }
+				
+					$("#tank").css("background","red");
+					function func(){
+					$("#tank").css("background","url('./tank.png')");}
+					setTimeout(func,150);
+  				} 
 		};
 
 	function reload() { this.ammunition ; }
@@ -168,10 +204,7 @@ function Tank (){
 				setTimeout(ammspeedcheck.call(this), reload.call(this));}
 
 				
-				this.turnL = function(){
-					var tank=document.getElementById("tank");
-				tank.style.right='50px';
-				};
+				
 				
 
 }

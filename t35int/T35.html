@@ -10,8 +10,8 @@
 <script type="text/javascript" src = "T35.js"></script>
 <table border="1">
 <tr><td>
-<p>Put buttom "UP" to increase you speed </p>
-<p>Put buttom "DOWN" to decrease speed </p>
+<p>Put buttom "Fast" to increase you speed </p>
+<p>Put buttom "Slow" to decrease speed </p>
 <p>Put buttom "SPACE" to FIRE! </p>
 </td>
 <td>
@@ -76,9 +76,11 @@
 </div>
 
 <style>
-  #butfire {background: white}
+  #butfire {background: grey}
   #butfire:hover {background: red}
-
+	body{
+    background:   #9CAB82;
+   } 
 #game:active { background: white; }
 
 </style>
@@ -90,6 +92,9 @@
 	cntrsup.addEventListener("click",spUp)
 	cntrsdown.addEventListener("click",spDn)
 	cntrleft.addEventListener("click",turnL)
+	cntrright.addEventListener("click",turnR)
+
+
 	
 </script>
 
