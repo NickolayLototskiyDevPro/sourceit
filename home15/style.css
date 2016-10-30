@@ -1,0 +1,28 @@
+body{
+	position: absolute;
+	width: 99%;
+	height: 99%;
+}
+
+.main{
+	width: 60%;
+	height: 60%;
+	margin: 10% auto 10% auto;
+
+}
+
+.inner{
+	width: 31%;
+	height: 31%;
+	float: left;
+	background: red;
+	margin: 8px;
+	position: relative;
+}
+
+.text {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+}
+
