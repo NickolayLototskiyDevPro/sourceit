@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<script type="text/javascript" src="http://scriptjava.net/source/scriptjava/scriptjava.js"></script>
+
+</head>
+<body>
+<div id="result">Here must be Google's respond</div>
+<input type="button" onclick="SendGet()" value="Send Request To Google">
+</body>
+	<script type="text/javascript">
+try{
+function SendGet() {
+
+	$$a({
+		type:'get',
+		url:'https://www.google.com',
+		data:{'q':'1'},
+		response:'text',
+			success: function (data){
+			$$('result',$$('result').innerHTML + data);}
+	});
+}
+}
+catch(err){
+	alert('Cant connect to Google');
+	alert(err.name);
+	alert(err.message);
+
+}
+	</script>
+</html>
