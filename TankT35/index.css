@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+#Status_Game{
+	position: relative;
+    text-align: center;
+	width: 100%;
+	background-color: red;
+}
+#Tank{
+    background-image: url(Content/Tank_Texture_110x162.png);
+	position:relative;
+	width: 115px;;
+	height:160px;
+	margin: 45%;
+	overflow: hidden;
+	}
+#Grasse{
+	background-image:url(../../../temp/sourceit/Tank/Content/Grass_Texture.png);
+	position:absolute;
+	width:800px;
+	height:1000px;
+	overflow: hidden;
+	}
+#Panell_Tank{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left:1200px;
+top: 200px;}
+#Move_up{
+	position: relative;
+	background:blue;
+	top:-20px;
+	left:125px;
+	width: 100px;
+	height: 50px;
+	font-size: 40px;
+	bottom: 100px;
+		}
+#Move_Down{
+	position:relative;
+	background:blue;
+	top:70px;
+	left:-38px;
+	width: 100px;
+	height: 50px;
+	font-size: 36px;
+	}
+#Button_Fire{
+	background:red;
+	margin:30px;
+	position:relative;
+	top:100px;
+	width: 100px;
+	height: 50px;
+	font-size: 40px;
+	}
+#Move_Left{
+	background:blue;
+	margin:30px;
+	position:relative;
+	left:-30px;
+	top: -25px;
+	width: 100px;
+	height: 50px;
+	font-size: 40px;
+	}
+#Move_Right{
+	background:blue;
+	position:relative;
+	top:50px;
+	left:140px;
+	width: 100px;
+	height: 50px;
+	font-size: 40px;
+	}
+#Online_Status{
+	position: relative;
+	left: 1000px;
+}
+#Start_Game{
+	position: relative;
+	background-color: green;
+	width: 100px;
+	height: 50px;
+	font-size: 100%;
+}
