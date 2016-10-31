@@ -1,21 +1,22 @@
  'use strict';
 
-  function NodeList(data, parentNode) {
+  function CreateNode(data, parentNode) {    //constructor
     if (parentNode) {
       this.upLink = parentNode;
-      if (!this.upLink.downLink) this.upLink.downLink = [];
-      this.upLink.downLink.push(this);
-    } else this.upLink = null;
+      if (!parentNode.downLink) parentNode.downLink = [];
+      parentNode.downLink.push(this);
+    } else this.upLink = null;             //root node
     this.data = data;
     this.downLink = null;
   }
 
-  NodeList.prototype.revNodeList = function(func) {
+  CreateNode.prototype.revNodeList = function(func) {     //pass string to func
     var str = '';
-    str += 'data: ' + this.data + ', upLink: ';
-    if (this.upLink)  str += this.upLink.data; else str += this.upLink;
+    str += 'data: ' + this.data;
+    str += ', upLink: ' + (this.upLink && this.upLink.data); //null or upLink.data
     str += ', downLink: ';
-    if (this.downLink) for (var i = 0; i < this.downLink.length; i++) { str += this.downLink[i].data + ' '; }
+    if (this.downLink) for (var i = 0; i < this.downLink.length; i++) { 
+      str += this.downLink[i].data + ' '; }
     else str += this.downLink;
     func(str);
 
@@ -27,10 +28,10 @@
   };
 
   function NodeListJSON(data, parentNode) {
-    NodeList.apply(this, arguments);
+    CreateNode.apply(this, arguments);
   }
 
-  NodeListJSON.prototype = Object.create(NodeList.prototype);
+  NodeListJSON.prototype = Object.create(CreateNode.prototype);
   NodeListJSON.constructor = NodeListJSON;
 
   NodeListJSON._nodeCount = 1;
@@ -40,34 +41,32 @@
   NodeListJSON.prototype.toJSON = function() {
     this._nodeId = NodeListJSON._nodeCount;
 
-    var JSobject = {};
-    JSobject.nodeId = NodeListJSON._nodeCount++;
-    JSobject.data = this.data; 
-    if (this.upLink) JSobject.upLinkId = this.upLink._nodeId;
-    else JSobject.upLinkId = null;
-    JSobject.downLink = this.downLink;
-
-    return JSobject;
+    return {
+      nodeId: NodeListJSON._nodeCount++,
+      data: this.data,
+      upLinkId: this.upLink && this.upLink._nodeId, //null or upLink._nodeId
+      downLink: this.downLink
+    };
   };
 
-  function ParseJSONtoNodeList(JSONstr) {
-    //parser
+  function ParseJSONtoNodeList(JSONstr) { //constructor
 
     var obj = JSON.parse(JSONstr);
     // console.log(obj);
 
     var tempJSONtoObject = {};
 
-    function createArrayNode(node) {
-      node.__proto__ = Object.create(NodeList.prototype);
+    function createNodeArray(node) {
+      node.__proto__ = Object.create(CreateNode.prototype);
+
       tempJSONtoObject[node.nodeId] = node;
 
       if (node.downLink)  for (var i = 0; i < node.downLink.length; i++) {
-        createArrayNode(node.downLink[i]);
+        createNodeArray(node.downLink[i]);
       }
     }
 
-    createArrayNode(obj);
+    createNodeArray(obj);
     // console.log(tempJSONtoObject);
 
     function createUpLink(node) {
@@ -79,15 +78,15 @@
 
     createUpLink(obj);
 
-    function deleteId(node) {
+    function deleteIds(node) {
       delete node.upLinkId;
       delete node.nodeId;
       if (node.downLink) for (var i = 0; i < node.downLink.length; i++) {
-        deleteId(node.downLink[i]);
+        deleteIds(node.downLink[i]);
       }
     }
 
-    deleteId(obj);
+    deleteIds(obj);
 
     console.log(obj);
 
@@ -96,11 +95,5 @@
     this.downLink = obj.downLink;
   }
 
-  ParseJSONtoNodeList.prototype = Object.create(NodeList.prototype);
+  ParseJSONtoNodeList.prototype = Object.create(CreateNode.prototype);
   ParseJSONtoNodeList.constructor = ParseJSONtoNodeList;
-
-
-
-
-
-
