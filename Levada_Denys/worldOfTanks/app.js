@@ -1,13 +1,12 @@
 function MoveTank(mTop, mLeft, mBottom, mRight) {
 
     this.up = function up(mTop) {
-        var defTop = parseFloat($("#Tank").css('top'));
-        var defBottom = parseFloat($("#Tank").css("bottom"));
-        var newTop = defTop - mTop - defBottom;
+        let defTop = parseFloat($("#Tank").css('top'));
+        let defBottom = parseFloat($("#Tank").css("bottom"));
+        let newTop = defTop - mTop - defBottom;
         if (newTop >= -263) {
             $("#Tank").css("top", newTop);
             $("#Tank").css("bottom", "0");
-
         } else {
             newTop = -263;
             $("#Tank").css("top", newTop);
@@ -15,9 +14,9 @@ function MoveTank(mTop, mLeft, mBottom, mRight) {
     }
 
     this.left = function left(mLeft) {
-        var defLeft = parseFloat($("#Tank").css('left'));
-        var defRight = parseFloat($("#Tank").css("right"));
-        var newLeft = defLeft - mLeft - defRight;
+        let defLeft = parseFloat($("#Tank").css('left'));
+        let defRight = parseFloat($("#Tank").css("right"));
+        let newLeft = defLeft - mLeft - defRight;
         if (newLeft >= -263) {
             $("#Tank").css("left", newLeft);
             $("#Tank").css("right", "0px");
@@ -28,9 +27,9 @@ function MoveTank(mTop, mLeft, mBottom, mRight) {
     }
 
     this.down = function down(mBottom) {
-        var defTop = parseFloat($("#Tank").css('top'));
-        var defBottom = parseFloat($("#Tank").css("bottom"));
-        var newBottom = defBottom - mBottom - defTop;
+        let defTop = parseFloat($("#Tank").css('top'));
+        let defBottom = parseFloat($("#Tank").css("bottom"));
+        let newBottom = defBottom - mBottom - defTop;
         if (newBottom >= -263) {
             $("#Tank").css("bottom", newBottom);
             $("#Tank").css("top", "0px");
@@ -42,13 +41,12 @@ function MoveTank(mTop, mLeft, mBottom, mRight) {
     }
 
     this.right = function right(mRight) {
-        var defLeft = parseFloat($("#Tank").css('left'));
-        var defRight = parseFloat($("#Tank").css("right"));
-        var newRight = defRight - mRight - defLeft;
+        let defLeft = parseFloat($("#Tank").css('left'));
+        let defRight = parseFloat($("#Tank").css("right"));
+        let newRight = defRight - mRight - defLeft;
         if (newRight >= -263) {
             $("#Tank").css("right", newRight);
             $("#Tank").css("left", "0px");
-
         } else {
             newRight = -263;
             $("#Tank").css('right', newRight);
@@ -60,7 +58,6 @@ var controls = new MoveTank();
 
 function Tank(amunition) {
     this.speed = 0;
-
     this.fuel = 100;
     this.hp = 100;
     this.ammo = amunition;
@@ -80,9 +77,7 @@ function Tank(amunition) {
             return alert('We already stopped!');
         }
         document.getElementById('Speed').innerHTML = 'Speed : ' + (--this.speed);
-
         controls.down(30);
-
         return this.speed;
     };
 
@@ -92,7 +87,6 @@ function Tank(amunition) {
         } else {
             alert('We already stopped!');
         }
-
     };
 
     this.turnRight = function() {
@@ -101,7 +95,6 @@ function Tank(amunition) {
         } else {
             alert('We already stopped!');
         }
-
     };
 
     this.shot = function() {
@@ -110,7 +103,6 @@ function Tank(amunition) {
         } else if (this.speed >= 40) {
             return alert('We`re going to fast. We have to slow down first!');
         }
-
         document.getElementById('Ammo').innerHTML = 'Ammo : ' + (--this.ammo);
         $("#Tank").css('background', 'red');
         return this.ammo;
@@ -144,7 +136,7 @@ var t35 = new T35(100);
 
 
 function chooseTheTank() {
-    var tank = prompt('Chose the tank');
+    let tank = prompt('Chose the tank');
     if (tank === 't52') {
         return tank;
 

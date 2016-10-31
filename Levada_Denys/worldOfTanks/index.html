@@ -3,16 +3,13 @@
 <head>
     <title> World Of Tanks </title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href='./node_modules/bootstrap/dist/css/bootstrap.min.css'>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='./view/css/all.css'>
 
-    <link rel='stylesheet' type='text/css' href='css/all.css'>
+    <script src='./node_modules/jquery/dist/jquery.min.js'></script>
 
-    <script src='js/jquery-3.1.1.min.js'></script>
-
-    <script src='js/worldOfTanks.js'></script>
+    <script src='./app.js'></script>
 </head>
 
 <body>
@@ -22,7 +19,7 @@
             <div id='onlineStatus'>
             </div>
             <div id='CentralDiv'>
-                <img id='Tank' src='images/tank-small.png' alt='Tank'>
+                <img id='Tank' src='./view/images/tank-small.png' alt='Tank'>
 
             </div>
         </div>
@@ -43,12 +40,12 @@
                 </div>
                 <div id='Hp'>
                     <script>
-                        document.getElementById('Hp').innerHTML = 'Hp : ' + t35.hp;
+                        document.getElementById('Hp').innerText = 'Hp : ' + t35.hp;
                     </script>
                 </div>
                 <div id='Fuel'>
                     <script>
-                        document.getElementById('Fuel').innerHTML = 'Fuel : ' + t35.fuel;
+                        document.getElementById('Fuel').innerText = 'Fuel : ' + t35.fuel;
                     </script>
                 </div>
                 <!--</div>-->
@@ -92,7 +89,7 @@
                 <p>A - turnLeft </p>
                 <p>D - turnRight </p>
                 <p>E - Shoot </p>
-                <button id ='startFinishButton' onclick = startFinishGame()> Start Game </button>
+                <button id='startFinishButton'> Start Game </button>
                 <!--<input id='startFinishButton' type="button" value='Start Game' onclick=startFinishGame() />-->
             </div>
             <!--</div>-->
@@ -115,8 +112,8 @@
                 t35.shot();
             }
         }
-        //window.onkeydown = keyControls;
         window.addEventListener('keydown', keyControls);
+        $("#startFinishButton").click(startFinishGame);
     </script>
 </body>
 

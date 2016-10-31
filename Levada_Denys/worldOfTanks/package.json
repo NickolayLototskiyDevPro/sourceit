@@ -1,0 +1,20 @@
+{
+    "name": "world_of_tanks",
+    "version": "0.0.6",
+    "description": "game",
+    "main": "app.js",
+    "scripts": {
+        "test": "test"
+    },
+    "keywords": [
+        "world",
+        "game",
+        "tanks"
+    ],
+    "author": "Levada Denys",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "3.3.7",
+        "jquery": "3.1.1"
+    }
+}
