@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>ООП</title>
+    <link rel="stylesheet" href="Task_9_OO JS.css">
+    <script src="Task_9_OO JS.js"></script>
+
+  </head>
+
+  <body id="body">
+
+    <div class="all">
+
+      <header id="header">
+        <img id="imgHeader" src="shapka.jpg"/>
+        <p id="state">OFFLINE</p>
+      </header>
+
+      <div id="tank" style="transform: translate3d(0, 0, 0);"><img id="imgTank" src="tank_t35_2.jpg"></div>
+
+      <div class="buttons">
+        <div class="shot" id="shot" onkeydown="t35.shot"></div>
+
+        <div id='move_up'>up speed</div>
+        <div id='move_down'>down speed</div>
+        <div id="move_left">left</div>
+        <div id="move_right">right</div>
+      </div>
+
+      <div id='transparency'></div>
+      <input id="isStartGame" type="button" value="Start Game">
+
+      <div class="info">
+        <p>Speed:       <span id='speed'></span>       </p>
+        <p>Fuel:        <span id="fuel"></span>        </p>
+        <p>Ammunition:  <span id='ammunition'></span>  </p>
+        <p>Crew:        <span id='crew'></span>        </p>
+      </div>
+
+    </div>
+
+  </body>
+</html>
+
+
+<!--  -->
