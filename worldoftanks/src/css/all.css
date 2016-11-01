@@ -1,0 +1,86 @@
+body{
+
+	background: url(/js/sourceit/worldoftanks/src/img/b.jpg)
+}
+
+.block1{
+	display: block;
+	margin: 0 6px 10px 0;
+	position: absolute;
+	bottom: 100px;
+    left: 15px;
+	width: 100px;
+	height: 100px;
+	color: white;
+}
+
+.block2{
+	display: block;
+	margin: 0 6px 10px 0;
+	position: absolute;
+	bottom: 50px;
+    left: 50px;
+	width: 100px;
+	height: 100px;
+}
+.block3{
+	display: block;
+	position: absolute;
+    left: 110px;
+}
+.but1{
+	position: fixed;
+	bottom: 180px;
+    left: 650px;
+    width: 100px;
+	height: 45px;
+}
+.but2{
+	position: fixed;
+	bottom: 80px;
+    left: 650px;
+    width: 100px;
+	height: 45px;
+}
+.but3{
+	position: fixed;
+	bottom: 130px;
+    left: 650px;
+    width: 100px;
+	height: 45px;
+}
+.but4{
+	position: fixed;
+	bottom: 130px;
+    left: 545px;
+    width: 100px;
+	height: 45px;
+}
+.but5{
+	position: fixed;
+	bottom: 130px;
+    left: 754.8px;
+    width: 100px;
+	height: 45px;
+}
+#header{
+	/*color: blue;*/
+	position: fixed;
+	left: 0px;
+	text-align: center;
+	color: green;
+	font-size: x-large;
+	background: blue;
+	border: solid 1px black;
+	top: 0px;
+	width: 1366px;
+	height: 30px;
+
+}
+.startButton{
+	position: fixed;
+	bottom: 30px;
+    left: 650px;
+    height: 45px;
+    width: 100px;
+}
