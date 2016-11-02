@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#game_field {
+	width: 400px;
+    height: 400px;
+    background:#000000;
+    border-radius: 25px;
+    position: absolute;
+    left:50%;
+	top:50%;
+	margin-left:-200px;
+	margin-top:-280px;
+}
+
+#header {
+    margin-top: 0px;
+    width: 100%;
+    height: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#header p {
+    color: #FFF;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.offline {
+    background: #DCDCDC;
+}
+
+.online {
+    background: #FF0000;
+}
+
+#footer{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+}
+
+#tank_icon{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-left:175px;
+    margin-top:175px;
+}
+
+.shoot{
+    background: red;
+}
+
+#events {
+    float: left;
+    margin: 20px 20px;
+    margin-left: 120px;
+	width:200px;
+    height:100px;
+    background: #FFDEAD;
+    border: 1px solid #8B7765;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#nav {
+    display: inline-block;
+	width:200px;
+    height:110px;
+    margin: 10px;
+    background: #FFFFFF;
+    border: 1px solid #8B7765;
+    border-radius: 20px;
+    position: relative;
+    left:50%;
+	margin-left:-480px;
+	padding: 10px;
+	text-align: center;
+}
+
+#selectTank {
+    position: absolute;
+    left:2%;
+    top:4%;
+}
+
+#nav input[type="button"] {
+	border-radius: 10%;
+	margin: 4px;
+	padding: 6px;
+}
+
+#startGame {
+    float: right;
+    width: 260px;
+    height: 100px;
+    margin: 30px 30px;
+    background: #FF0000;
+    color: #FFF;
+    font-size: 26px;
+    padding: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+#shoot {
+	border-radius: 100%;
+}

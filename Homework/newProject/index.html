@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>World of tanks</title>
+	<link type="text/css" rel="stylesheet" href="./views/css/tank.css"/>
+</head>
+<body>
+<div id="wrapper">
+<div id="header" class="offline"><p>Offline</p></div>
+<div id="selectTank">
+Choose tank:
+<select id="chooseTank" name="chooseTank" onchange="switchTank()">
+<option value="cometTank">Comet</option>
+<option value="t_35_1">T-35</option>    
+</select>
+</div>
+<div id="game_field">
+<img id="tank_icon" src="./views/img/abrams_m1_battle_tank.png">	
+</div>
+<div id="footer">
+<div id="events">
+	<div id="speed_div">Speed: <span id="speed_span"></span></div>
+	<div id="ammo_div">Ammo: <span id="ammo_span"></span></div>
+</div>
+
+<div id="nav">
+<p>
+	<input type="button" id="forwardButton" value="Forward">	
+</p>
+<p>
+	<input type="button" id="leftButton" value="<">
+	<input type="button" id="shootButton" value="*">
+	<input type="button" id="rightButton" value=">">
+</p>
+<p>
+	<input type="button" id="backButton" value="Back">
+</p>
+</div>
+<input type="button" id="startGame" value="Start game">
+
+</div>
+</div><script type="text/javascript" src="./js/model.js"></script>
+<script type="text/javascript" src="./app.js"></script>
+</body>
+</html>

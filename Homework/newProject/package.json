@@ -1,0 +1,25 @@
+{
+  "name": "worldoftanks",
+  "version": "0.0.1",
+  "description": "World of tanks online",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "keywords": [
+    "tanki",
+    "world",
+    "online",
+    "game"
+  ],
+  "author": "MiraChase",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "underscore": "^1.8.3"
+  }
+}
