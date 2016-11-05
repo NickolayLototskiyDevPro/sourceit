@@ -1,0 +1,36 @@
+body{
+	position: absolute;
+	width: 99%;
+	height: 99%;
+}
+
+#mainId{
+	width: 60%;
+	height: 60%;
+	margin: 5% auto auto auto;
+	position: relative;
+	visibility: hidden;
+
+}
+
+.inner{
+	float: left;
+	margin: 1%;
+	padding: 14%;
+	
+}
+
+.text {
+	position: absolute;
+	font-size: 140%;
+	padding: 10%;
+}
+
+#idbutton{
+	margin: 0 auto;
+	/*text-align: center;*/
+	display: block;
+}
+
+
+
