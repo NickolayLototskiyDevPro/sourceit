@@ -50,6 +50,6 @@ class ControllerFifteen{
 		this.Model=new Fifteen();
 
 		this.Start=false;
-		//this.Model.showStorage();
+		
 	}
 }

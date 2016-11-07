@@ -28,9 +28,6 @@ class BaseFifteen{
 	}
 
 	destruct(){
-		//delete this.storage[0];
-		//delete this.storage[1];
-		//delete this.storage[2];
 
 		this.storage.pop();
 		this.storage.pop();
