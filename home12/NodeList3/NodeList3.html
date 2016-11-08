@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript</title>
+  <meta charset="utf-8">
+          
+</head>
+
+  <script src="./js/NodeList3.js" type="text/javascript"></script>
+
+<body>
+
+
+
+<script>
+  'use strict';
+
+
+  var upper = new NodeListJSON('level1');
+
+  var node21 = new NodeListJSON('level2-1', upper),
+      node22 = new NodeListJSON('level2-2', upper),
+      node23 = new NodeListJSON('level2-3', upper),
+      node31 = new NodeListJSON('level3-1', node21),
+      node41 = new NodeListJSON('level4-1', node31),
+      node51 = new NodeListJSON('level5-1', node41),
+      node24 = new NodeListJSON('level2-4', upper),
+      node32 = new NodeListJSON('level3-2', node22),
+      node33 = new NodeListJSON('level3-3', node23),
+      node34 = new NodeListJSON('level3-4', node23),
+      node42 = new NodeListJSON('level4-2', node32),
+      node52 = new NodeListJSON('level5-2', node42);
+
+  upper.revNodeList(console.log);
+
+
+  var str = JSON.stringify(upper, '', 4);
+  console.log(str);
+
+  var upperRestore = new ParseJSONtoNodeList(str);
+  upperRestore.revNodeList(console.log);
+  
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

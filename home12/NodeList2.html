@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript</title>
+  <meta charset="utf-8">
+          
+</head>
+
+<body>
+
+
+
+<script>
+  'use strict';
+
+  function CreateNode(data, parentNode) {
+    if (parentNode) {
+      this.upLink = parentNode;
+      if (!this.upLink.downLink) this.upLink.downLink = [];
+      this.upLink.downLink.push(this);
+    } else this.upLink = null;
+    this.data = data;
+  }
+  
+  function CreateNodeJSON(data, parentNode) {
+    CreateNode.apply(this, arguments);
+  }
+
+  CreateNodeJSON.prototype = Object.create(CreateNode.prototype);
+  CreateNodeJSON.constructor = CreateNodeJSON;
+
+
+  var upper = new CreateNodeJSON('level1');
+
+  var node21 = new CreateNodeJSON('level2-1', upper),
+      node22 = new CreateNodeJSON('level2-2', upper),
+      node23 = new CreateNodeJSON('level2-3', upper),
+      node31 = new CreateNodeJSON('level3-1', node21),
+      node41 = new CreateNodeJSON('level4-1', node31),
+      node51 = new CreateNodeJSON('level5-1', node41),
+      node24 = new CreateNodeJSON('level2-4', upper),
+      node32 = new CreateNodeJSON('level3-2', node22),
+      node33 = new CreateNodeJSON('level3-3', node23),
+      node34 = new CreateNodeJSON('level3-4', node23),
+      node42 = new CreateNodeJSON('level4-2', node32),
+      node52 = new CreateNodeJSON('level5-2', node42);
+
+
+
+
+  function revNodeList(node, func) {
+    func(node.data);
+    if (node.downLink) {
+      for (var i = 0; i < node.downLink.length; i++) {
+        revNodeList(node.downLink[i], func);
+      }
+    }
+  }
+
+
+
+  revNodeList(upper, console.log);
+  
+  var str = JSON.stringify(upper, ['data', 'downLink']);
+  console.log(str);
+
+  var upperRestore = JSON.parse(str);
+  revNodeList(upperRestore, console.log);
+ 
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
