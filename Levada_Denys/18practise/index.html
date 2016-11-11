@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>18 practise</title>
+	<link rel='stylesheet' type='text/css' href='./css/all.css'>
+	<script src ='./js/jquery.min.js'></script>
+</head>
+<body>
+	<div id = 'validator'>
+		<form id = validForm>
+			<ul>
+			<li><input id='first' type='text'></li>
+			<li><input id='second' type='text'></li>
+			</ul>
+		</form>
+		<div id='buttons'> 
+			<button id = 'clear'>Clear</button>
+			<button id = 'validate'>Validate</button>
+		</div>
+	</div>
+
+<script src = './js/app.js'></script>
+<script>
+disableSecond();
+$('#clear').click(clear);
+$("#validate").click(validate);
+</script>
+</body>
+</html>

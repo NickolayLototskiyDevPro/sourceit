@@ -1,0 +1,31 @@
+#submitWrapper {
+    width: 350px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 70px auto;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    clear: both;
+    text-align: right;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+
+label {
+    float: left;
+    padding-right: 20px;
+}
+
+#submit {
+    float: left;
+    margin: 10px auto;
+}
+
+#submitBut {
+    margin-top: 10px;
+    width: 100px;
+    height: 25px;
+}

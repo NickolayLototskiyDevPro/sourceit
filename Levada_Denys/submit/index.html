@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Submit Homework Levada Denys </title>
+    <link rel='stylesheet' type='text/css' href='./node_modules/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='./view/all.css'>
+</head>
+
+<body>
+    <div id='submitWrapper'>
+        <div id='submit'>
+            <ul>
+                <li>
+                    <label for='name'>Name: </label>
+                    <input id='name' type='text'> </li>
+                <li>
+                    <label for='secondName'>Second Name: </label>
+                    <input id='secondName' type='text'></li>
+                <li>
+                    <label for='email'>Email: </label>
+                    <input id='email' type='text' placeholder="example@gmail.com"></li>
+                <li>
+                    <label for='telNumber'>Number: </label>
+                    <input id='telNumber' type='text' placeholder="510-47-33"></li>
+            </ul>
+
+            <button id=submitBut>Submit</button>
+
+        </div>
+
+    </div>
+
+    <script src='./node_modules/jquery/dist/jquery.min.js'></script>
+    <script src='./app.js'></script>
+    <script>
+        $("#submitBut").click(submit);
+    </script>
+</body>
+</html>
