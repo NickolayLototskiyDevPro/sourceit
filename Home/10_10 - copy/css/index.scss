@@ -1,0 +1,78 @@
+@import url(reset.css);
+
+#wrapper{
+	
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#content{
+	display: block;
+	position: relative;
+	height: 400px;
+	width: 100%;
+	border: 1px solid black;
+		#T_35{
+		display: block;
+		background: black;
+		width: 35px;
+		height: 35px;
+		top: 37%;
+		left: 50%;
+		position: absolute;
+		
+  			transition: transform 500ms linear;
+  			
+		}
+}
+.indicators{
+	display: inline-block;
+	width: 30%;
+	border: 1px solid black;
+	
+	background: yellow;
+	.indicatName{		
+		margin: 20px 20px;
+		li{
+			color:  black;
+			font: 12px;
+			padding: 5px 5px;
+			.index{
+				float: right;
+				border: 1px solid black;
+				text-align: center;
+				padding: 0px 10px;
+				width: 30px;
+
+			}
+		}
+	}
+}
+.pannel{
+	display: inline-block;
+	width: 50%;
+	form{
+		outline: none;
+		margin: 20px 20px;
+		#speed_up, #speed_down{
+			width: 23%;
+			margin: 15px auto;
+			display: block;
+		}
+		#maneuver_right, #maneuver_left, #kill{
+			width: 23%;
+			margin: 15px 25px;
+		}
+		#maneuver_right{
+			float: right;
+		}
+		#kill{
+			width: 60px;
+			border-radius: 30px;
+			height: 60px;
+			margin: 0px 80px;
+			outline: none;
+			background: red;
+		}
+	}
+}

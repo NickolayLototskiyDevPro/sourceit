@@ -1,0 +1,24 @@
+{
+  "name": "wordtanks",
+  "version": "0.0.1",
+  "description": "Word of tanks online",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "tanki",
+    "world",
+    "online",
+    "game\u001b[A\u001b[A\u001b[A\u001b[A\u001b[A\u001b[A\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[CldOfTanks\u001b[B\u001b[B\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Cld",
+    "of",
+    "tanks",
+    "online\u001b[B\u001b[B\u001b[B\u001b[B\u001b[C\u001b[C"
+  ],
+  "author": "student",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "underscore": "^1.8.3"
+  }
+}

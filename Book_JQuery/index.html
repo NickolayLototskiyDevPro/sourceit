@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./test.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+    $(document).ready(function (){
+        $("h3").css("color", "red");
+    });
+    
+    $(function (){
+        $("h3").css("color", "green")
+    })
+    </script>
+</head>
+<body>
+    <h3>Hello</h3>
+<header>
+    <h1>Page title</h1>
+    <p>Page description</p>
+</header>
+    <div id="content" class="wrapper box">
+        <h2>Article title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quaerat quo animi ipsam ut vel.</p>
+        <h2>Article title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quaerat quo animi ipsam ut vel.</p>
+    </div>
+    <footer>Copyriting</footer>
+    <script>
+    $(function(){
+        $("#content").css("color","green");
+    })
+    $(function(){
+        $("h1+p").css("margin-top","50px");
+    })
+    $(function(){
+        $("p~h2").css("color", "yellow");
+    })
+    $(function(){
+        $(".box > *").css("border","1px red");
+    })
+    </script>
+</body>
+</html>

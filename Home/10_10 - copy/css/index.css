@@ -1,0 +1,76 @@
+@import url(reset.css);
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/10_10\%20-\%20copy\/css\/index\.scss}line{font-family:\000033}}
+#wrapper {
+  padding: 10px;
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/10_10\%20-\%20copy\/css\/index\.scss}line{font-family:\000039}}
+#content {
+  display: block;
+  position: relative;
+  height: 400px;
+  width: 100%;
+  border: 1px solid black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/10_10\%20-\%20copy\/css\/index\.scss}line{font-family:\0000315}}
+  #content #T_35 {
+    display: block;
+    background: black;
+    width: 35px;
+    height: 35px;
+    top: 37%;
+    left: 50%;
+    position: absolute;
+    transition: transform 500ms linear; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/10_10\%20-\%20copy\/css\/index\.scss}line{font-family:\0000328}}
+.indicators {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid black;
+  background: yellow; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/10_10\%20-\%20copy\/css\/index\.scss}line{font-family:\0000334}}
+  .indicators .indicatName {
+    margin: 20px 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/10_10\%20-\%20copy\/css\/index\.scss}line{font-family:\0000336}}
+    .indicators .indicatName li {
+      color: black;
+      font: 12px;
+      padding: 5px 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/10_10\%20-\%20copy\/css\/index\.scss}line{font-family:\0000340}}
+      .indicators .indicatName li .index {
+        float: right;
+        border: 1px solid black;
+        text-align: center;
+        padding: 0px 10px;
+        width: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/10_10\%20-\%20copy\/css\/index\.scss}line{font-family:\0000351}}
+.pannel {
+  display: inline-block;
+  width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/10_10\%20-\%20copy\/css\/index\.scss}line{font-family:\0000354}}
+  .pannel form {
+    outline: none;
+    margin: 20px 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/10_10\%20-\%20copy\/css\/index\.scss}line{font-family:\0000357}}
+    .pannel form #speed_up, .pannel form #speed_down {
+      width: 23%;
+      margin: 15px auto;
+      display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/10_10\%20-\%20copy\/css\/index\.scss}line{font-family:\0000362}}
+    .pannel form #maneuver_right, .pannel form #maneuver_left, .pannel form #kill {
+      width: 23%;
+      margin: 15px 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/10_10\%20-\%20copy\/css\/index\.scss}line{font-family:\0000366}}
+    .pannel form #maneuver_right {
+      float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/10_10\%20-\%20copy\/css\/index\.scss}line{font-family:\0000369}}
+    .pannel form #kill {
+      width: 60px;
+      border-radius: 30px;
+      height: 60px;
+      margin: 0px 80px;
+      outline: none;
+      background: red; }
+
+/*# sourceMappingURL=index.css.map */
