@@ -1,0 +1,54 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/regular\/css\/stylesheet\.scss}line{font-family:\000031}}
+#registr {
+  display: block;
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  background: burlywood;
+  padding: 20px;
+  border-radius: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/regular\/css\/stylesheet\.scss}line{font-family:\0000310}}
+  #registr #form {
+    width: 300px;
+    margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/regular\/css\/stylesheet\.scss}line{font-family:\0000313}}
+    #registr #form #value {
+      display: inline-block;
+      width: 50px;
+      font: 16px Arial; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/regular\/css\/stylesheet\.scss}line{font-family:\0000318}}
+    #registr #form #name, #registr #form #sName, #registr #form #eMail, #registr #form #number {
+      display: inline-block;
+      background: black;
+      font: 16px Arial;
+      color: white;
+      width: 200px;
+      border-radius: 20px;
+      outline: none;
+      border: 3px solid grey;
+      padding: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/regular\/css\/stylesheet\.scss}line{font-family:\0000330}}
+  #registr #submit {
+    margin: 0 auto;
+    border-radius: 20px;
+    display: block;
+    margin-top: 20px;
+    background: black;
+    font: 16px Arial;
+    color: white;
+    height: 40px;
+    width: 80px;
+    outline: none;
+    border: 1px solid grey; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/regular\/css\/stylesheet\.scss}line{font-family:\0000342}}
+    #registr #submit:hover {
+      background: yellow;
+      color: blue; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/JavaScript\/sourceit\/Home\/regular\/css\/stylesheet\.scss}line{font-family:\0000348}}
+h1 {
+  margin: auto;
+  text-align: center;
+  color: white; }
+
+/*# sourceMappingURL=stylesheet.css.map */

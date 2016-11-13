@@ -5,15 +5,6 @@
     <title>Document</title>
     <script src="./test.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script>
-    $(document).ready(function (){
-        $("h3").css("color", "red");
-    });
-    
-    $(function (){
-        $("h3").css("color", "green")
-    })
-    </script>
 </head>
 <body>
     <h3>Hello</h3>
@@ -42,5 +33,29 @@
         $(".box > *").css("border","1px red");
     })
     </script>
+
+<div id="wrapper" style="margin:20px; display: inline-block; weidth:500px; border: 1px solid black; padding: 20px">
+   <input type="text" id="text1"; value="text"> 
+   <input type="text" id="text"; value="text">
+
+   <input type="button" value="Clear" id="Clear">
+   <input type="button" value="Val" id="Val">
+</div>
+<script>
+    $(function(){
+        $("#Clear").click(
+            function(){
+                $("#text1").val("");
+            }
+        )
+    })
+    $(function(){
+        $("#Val").click(
+            function(){
+            $("#text").prop("disabled", true);;
+            
+        })
+    })
+</script>
 </body>
 </html>
