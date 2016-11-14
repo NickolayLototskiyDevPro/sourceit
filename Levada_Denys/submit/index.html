@@ -8,7 +8,7 @@
 
 <body>
     <div id='submitWrapper'>
-        <div id='submit'>
+        <div id='submit'><!-- This is not good id for the form. Submit is reserved word. Please rename. -->
             <ul>
                 <li>
                     <label for='name'>Name: </label>
@@ -33,7 +33,7 @@
     <script src='./node_modules/jquery/dist/jquery.min.js'></script>
     <script src='./app.js'></script>
     <script>
-        $("#submitBut").click(submit);
+        $("#submitBut").click(submit);// This is not acceptable way to handle this event! Rework!
     </script>
 </body>
 </html>
