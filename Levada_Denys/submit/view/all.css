@@ -29,3 +29,11 @@ label {
     width: 100px;
     height: 25px;
 }
+
+.green {
+    border: 2px solid green;
+}
+
+.red {
+    border: 2px solid red;
+}
