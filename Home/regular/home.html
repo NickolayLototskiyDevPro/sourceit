@@ -5,7 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./index.js" async></script>
+    <script src="./index.js" async></script><!--Why did you use async load? Please explain -->
 </head>
 <body>
     <div id="registr">
@@ -15,19 +15,19 @@
             <input type="text" id="name"; value="">
         </div>
          <div id="form">
-            <p id="value">sname</p>
+            <p id="value">sname</p><!-- value is not good for id because value is reserved word -->
             <input type="text" id="sName"; value="">
          </div>
         <div id="form">
-            <p id="value">email</p>
+            <p id="value">email</p><!--id repeating detected! it is not valid html! -->
         <input type="text" id="eMail"; value="">
         </div>
         <div id="form">
-            <p id="value">tel</p>
+            <p id="value">tel</p><!--The same above! do not use id - vale!!!! it is forbiden!!!!-->
             <input type="text" id="number"; value="">
         </div>
          
-        <button id="submit">Submit</button>
+        <button id="submit">Submit</button><!--id submit is not valid! it is reserved word!-->
       
     </div>
 </body>
