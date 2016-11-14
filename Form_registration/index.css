@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+#form_regestration{
+	border:solid 10px greenyellow;
+	width:300px;
+	height:200px;
+	position:relative;
+	}
+#name_area{
+	position:absolute;
+	left : 100px;
+	top: 2px;
+	}
+#second_name_area{
+	position:absolute;
+	left:100px;
+	top: 35px;
+}
+#email_area{
+	position:absolute;
+	left:100px;
+	top: 70px;
+	}
+#telephone_area{
+	position: absolute;
+	left:100px;
+	top: 110px;
+}
+#clear_button{
+	position:absolute;
+	left: 100px;
+	}
+#submit_button{
+	position:absolute;
+	left:210px;
+	}	
+			
+			
