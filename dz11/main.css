@@ -1,0 +1,37 @@
+#addForm{
+		position: absolute;
+		left: 300px;
+		top: 100px;
+		border-style: solid;
+		border-width: 1px;
+		padding: 5px;
+		height: auto;
+		width: 310px;
+	}
+
+	#validateForm{
+	position: absolute;
+		left: 300px;
+		top: 250px;
+		border-style: solid;
+		border-width: 1px;
+		padding: 5px;
+		height: auto;
+		width: 310px;
+	}
+	
+	#add{
+
+		position: relative;
+		left: 270px;
+	}
+
+	#validate{
+		position: relative;
+		left: 195px;
+	}
+
+	#clear{
+		position: relative;
+		left: 0px;
+	}
