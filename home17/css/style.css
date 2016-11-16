@@ -1,0 +1,44 @@
+.addReg {
+	margin: 0 auto;
+	width: 65%;
+	padding: 10px;
+	border: 1px solid;
+}
+
+
+
+.inputDiv * {
+	display: block;
+	margin: 0 auto;
+	width: 95%;
+}
+
+.buttonDiv{
+	display: block;
+	width: 95%;
+	text-align: center;
+	padding: 5px;
+}
+
+.tableReg {
+	border: 1px solid;
+	width: 65%;
+	margin: 15px auto 0 auto;
+	padding: 10px;
+	display: none;
+}
+
+.rowId {
+	width: 3%;
+}
+
+.rowTxt {
+	width: 44%;
+}
+
+#outDiv{
+	padding: 1px;
+	display: block;
+	margin: 0 auto;
+	width: 95%;
+}
