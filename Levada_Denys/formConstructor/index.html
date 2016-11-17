@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Form construcot HW </title>
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' href='./node_modules/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='./css/all.css'>
+</head>
+
+<body>
+
+    <div id='wrapper'>
+        <div id='formConstructor'>
+            <ul id='constructor'>
+                <li>
+                    <input id='idConstructor' placeholder="Name(id)">
+                </li>
+                <li>
+                    <input id='regExpConstructor' placeholder="'RegExp' (Without //)">
+                </li>
+            </ul>
+
+            <button id='addConstructorToFinalForm'>Add</button>
+
+        </div>
+
+        <div id='finalForm'>
+            <ul id='spaceReservedForForms'>
+
+            </ul>
+            <button id='clearFinalForm'>Clear</button>
+            <button id='validateFinalForm'>Validate</button>
+        </div>
+
+    </div>
+    <script src='./node_modules/jquery/dist/jquery.min.js'></script>
+    <script src='./app.js'></script>
+    <script>
+        let addButton = document.getElementById('addConstructorToFinalForm');
+        addButton.addEventListener('click', add);
+        let clearButton = document.getElementById('clearFinalForm');
+        clearButton.addEventListener('click', clear);
+        let validateButton = document.getElementById('validateFinalForm');
+        validateButton.addEventListener('click', validate);
+    </script>
+
+</body>
+
+
+</html>
