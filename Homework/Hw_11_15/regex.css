@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: bold italic 16px Century Gothic, Garamond, Helvetica, sans-serif;
+    color: #4F4F4F;
+}
+
+body {
+	width: 100%;
+}
+
+p {
+	padding: 20px;
+}
+
+span {
+	line-height: 20px;
+	float: left;
+	padding: 20px;
+	padding-right: 20px;
+}
+
+button{
+	margin: 20px;
+	padding: 10px;
+	border-radius: 5px;
+    border: 1px solid #DCDCDC;
+    background: #FFFAFA;
+    background: linear-gradient(to bottom, #FFFAFA, #DCDCDC);
+	box-shadow: 0 0 10px rgba(34,139,34,0.5);
+}
+
+input[type="text"] {
+   border: 1px solid #DCDCDC;
+   box-shadow: 0 0 5px rgba(34,139,34,0.5);
+   border-radius: 3px;
+   height: 20px; 
+   width: 70%;
+   background-color: #FFFAFA;
+}
+
+.inputs{
+	text-align: right;
+}
+
+
+#wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap; 
+	align-items: center;
+}
+
+.forms {
+	padding: 20px;
+	width: 40%; 
+    background: #FFFAFA;
+    background: linear-gradient(to bottom, #FFFAFA, #F8F8FF);
+    border-radius: 25px;
+    border: 1px solid #DCDCDC;
+	box-shadow: 0 0 10px rgba(34,139,34,0.5);
+	margin-top: 40px;
+
+}
+
+#toAdd {
+	margin-top: 20px;
+    height: 200px;
+}
+
+#toValidate {
+    height: 250px;
+    background: #FFFAFA;
+}
+
+#results {
+	height: 80%;
+	overflow: scroll;
+	padding: 4px;
+}
+
+#buttons {
+	height: 20%;
+	padding: 10px;
+}
+
+#buttons > button{
+	margin: 0;
+	margin-left: 20px;
+}
+
+#results > p, #results > input[type="text"] {
+	margin: 5px;
+	padding: 0;
+}
+
+#results > .invalid {
+	border-color: #8B0000;
+	box-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
+}
+
+#results > .valid {
+	border-color: #228B22;
+	box-shadow: 0 0 10px rgba(34, 139, 34, 0.5);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Regex</title>
+	<link type="text/css" rel="stylesheet" href="regex.css"/>
+</head>
+<body>
+<form>
+<div id="wrapper">
+
+	<div id="toAdd" class="forms">
+
+	<div class="inputs">
+		<span>Input:</span>
+		<p><input type="text" id="mainInput"></p>
+	</div>
+
+	<div class="inputs">
+		<span>Reg ex:</span>
+		<p><input type="text" id="regEx" placeholder=" /[A-z]/flags"></p>
+	</div>
+	
+		<button id="add" onclick="return false">Add</button>
+
+	</div>
+
+	<div id="toValidate" class="forms">
+	<div id="results">
+		
+	</div>
+	
+	<div id="buttons">
+		<button id="clear" onclick="return false">Clear</button>
+		<button id="validate" onclick="return false">Validate</button>
+	</div>
+	</div>
+</div>
+
+</form>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
