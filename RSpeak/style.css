@@ -1,0 +1,62 @@
+#centerLayer { 
+margin-top: 20px; 
+margin-left: 25%; 
+width: 650px; 
+background: grey; 
+background: linear-gradient(to top, #65645d, #000000);
+padding: 50px; 
+border: 1px solid black;
+border-radius: 10px;
+
+}
+#span{
+color: white;	
+}
+#validation{
+
+ text-decoration:none; 
+ text-align:center; 
+ padding:7px 21px; 
+ border:solid 1px #162024; 
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px; 
+ border-radius: 4px; 
+ font:17px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#dfebeb; 
+ background-color:#7a8a8f; 
+ background-image: -moz-linear-gradient(top, #7a8a8f 0%, #9babb0 100%); 
+ background-image: -webkit-linear-gradient(top, #7a8a8f 0%, #9babb0 100%); 
+ background-image: -o-linear-gradient(top, #7a8a8f 0%, #9babb0 100%); 
+ background-image: -ms-linear-gradient(top, #7a8a8f 0% ,#9babb0 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9babb0', endColorstr='#9babb0',GradientType=0 ); 
+ background-image: linear-gradient(top, #7a8a8f 0% ,#9babb0 100%);   
+ -webkit-box-shadow:0px 0px 2px #1a1515, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #1a1515,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #1a1515, inset 0px 0px 1px #ffffff;  
+  
+  }
+  #clear {
+
+ text-decoration:none; 
+ text-align:center; 
+ padding:7px 21px; 
+ border:solid 1px #162024; 
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px; 
+ border-radius: 4px; 
+ font:17px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#dfebeb; 
+ background-color:#7a8a8f; 
+ background-image: -moz-linear-gradient(top, #7a8a8f 0%, #9babb0 100%); 
+ background-image: -webkit-linear-gradient(top, #7a8a8f 0%, #9babb0 100%); 
+ background-image: -o-linear-gradient(top, #7a8a8f 0%, #9babb0 100%); 
+ background-image: -ms-linear-gradient(top, #7a8a8f 0% ,#9babb0 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9babb0', endColorstr='#9babb0',GradientType=0 ); 
+ background-image: linear-gradient(top, #7a8a8f 0% ,#9babb0 100%);   
+ -webkit-box-shadow:0px 0px 2px #1a1515, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #1a1515,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #1a1515, inset 0px 0px 1px #ffffff;  
+  
+  }
