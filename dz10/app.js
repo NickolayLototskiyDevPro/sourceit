@@ -13,7 +13,7 @@ submit.onclick = function() {
      email = $('.inputEmail').val();
      telephone = $('.inputTelephone').val();
      
-tmpEmail = email.search(/\w[a-zA-Z]{1,}\w[@]{1}\w[a-zA-Z]{1,}\.\w[a-z]{1,3}/ig);
+tmpEmail = email.search(/^\w[a-zA-Z]{1,}\w[@]{1}\w[a-zA-Z]{1,}\.\w[a-z]{1,3}/ig);
 
     if (tmpEmail >= 0){
 
@@ -29,7 +29,7 @@ tmpEmail = email.search(/\w[a-zA-Z]{1,}\w[@]{1}\w[a-zA-Z]{1,}\.\w[a-z]{1,3}/ig);
 
     setTimeout("text3.style.color = 'black'", 2000);
 
-tmpTelephone= telephone.search(/\d{3}\-\d{2}\-\d{2}/g);
+tmpTelephone= telephone.search(/^\d{3}\-\d{2}\-\d{2}/g);
      
     if (tmpTelephone >= 0){
 
@@ -48,3 +48,10 @@ tmpTelephone= telephone.search(/\d{3}\-\d{2}\-\d{2}/g);
     console.log(tmpEmail);
     console.log(tmpTelephone);
 };
+
+// // function(locator, regex){
+// 	var val = $(locator),val();
+// 	return val.match(regex);
+// }
+
+// a('#name', /\w/ig) // loactor this is #, . and other;
