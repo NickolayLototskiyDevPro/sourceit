@@ -1,0 +1,17 @@
+{
+  "name": "regular2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "n"
+  },
+  "keywords": [
+    "m"
+  ],
+  "author": "nazar",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "jquery": "~3.1.1"
+  }
+}

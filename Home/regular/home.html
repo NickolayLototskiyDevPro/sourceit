@@ -5,29 +5,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./index.js" async></script><!--Why did you use async load? Please explain -->
+    <script src="./index.js" async></script>
 </head>
 <body>
     <div id="registr">
         <h1>Registration</h1>
-        <div id="form">
-            <p id="value">Name</p>
+        <div class="form">
+            <p class="descr">Name</p>
             <input type="text" id="name"; value="">
         </div>
-         <div id="form">
-            <p id="value">sname</p><!-- value is not good for id because value is reserved word -->
+         <div class="form">
+            <p class="descr">sname</p>
             <input type="text" id="sName"; value="">
          </div>
-        <div id="form">
-            <p id="value">email</p><!--id repeating detected! it is not valid html! -->
-        <input type="text" id="eMail"; value="">
+        <div class="form">
+            <p class="descr">email</p>
+            <input type="text" id="eMail"; value="">
         </div>
-        <div id="form">
-            <p id="value">tel</p><!--The same above! do not use id - vale!!!! it is forbiden!!!!-->
+        <div class="form">
+            <p class="descr">tel</p>
             <input type="text" id="number"; value="">
         </div>
          
-        <button id="submit">Submit</button><!--id submit is not valid! it is reserved word!-->
+        <button id="buttonSubm">Submit</button>
       
     </div>
 </body>
