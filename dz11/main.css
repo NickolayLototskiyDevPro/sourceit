@@ -6,7 +6,7 @@
 		border-width: 1px;
 		padding: 5px;
 		height: auto;
-		width: 310px;
+		width: 420px;
 	}
 
 	#validateForm{
@@ -17,21 +17,28 @@
 		border-width: 1px;
 		padding: 5px;
 		height: auto;
-		width: 310px;
+		width: 420px;
 	}
 	
 	#add{
 
 		position: relative;
-		left: 270px;
+		left: 380px;
 	}
 
 	#validate{
 		position: relative;
-		left: 195px;
+		left: 305px;
+		margin-top: 3px;
 	}
 
 	#clear{
 		position: relative;
 		left: 0px;
+		margin-top: 3px;
+	}
+
+	#name{
+
+		color: black;
 	}
