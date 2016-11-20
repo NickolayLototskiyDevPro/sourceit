@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> The Game of Pyatnashki Game </title>
+    <link rel='stylesheet' href='./../node_modules/bootstrap/dist/css/bootstrap.min.css'>
+    <script src='./../node_modules/jquery/dist/jquery.min.js'></script>
+    <script src='./../node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+
+    <link rel='stylesheet' href=./../css/all.css>
+
+    <link rel='stylesheet' href='./css/all.css'>
+    <script src='js/game.js'></script>
+</head>
+
+<body>
+    <div id='wrapper'>
+        <header>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Menu:
+</button>
+                <a class="navbar-brand" href="./../index.html">Main page</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header">Logical Games</li>
+                    <li><a href="./index.html">Пятнашки</a></li>
+                    <li class="dropdown-header"></li>
+                    <li><a href="./../feedback/index.html">Feedback</a></li>
+                    <!--<li><a href="#">JavaScript</a></li>-->
+                </ul>
+            </div>
+
+        </header>
+
+        <div id='main'>
+            <div id='centralDiv' class='col-xs-4 col-sm-4 col-md-4 col-lg-4'>
+                <!--<div id='center'>-->
+                <div class="row">
+                    <div id="1" class="block"></div>
+                    <div id="2" class="block"></div>
+                    <div id="3" class="block"></div>
+                </div>
+                <div class="row">
+                    <div id="4" class="block"></div>
+                    <div id="5" class="block"></div>
+                    <div id="6" class="block"></div>
+                </div>
+                <div class="row">
+                    <div id="7" class="block"></div>
+                    <div id="8" class="block"></div>
+                    <div id="9" class="block"></div>
+                </div>
+                <!--</div>-->
+                <button id='reset'> Reset Game </button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id='foot' class="container-fluid">
+
+
+        <p> Made by Levada Denys</p>
+        <p> levada.denys@gmail.com </p>
+        <p> 2016 </p>
+
+    </footer>
+
+
+    <script>
+        game.arrangeBox();
+        game.fillBox();
+
+        function keyControls(event) {
+            if (event.keyCode === 87) {
+                game.controls_up();
+            } else if (event.keyCode === 83) {
+                game.controls_down();
+            } else if (event.keyCode === 65) {
+                game.controls_left();
+            } else if (event.keyCode === 68) {
+                game.controls_right();
+            }
+        }
+
+        window.addEventListener('keydown', keyControls);
+        $("#reset").click(function() {
+            game.box = [];
+            game.arrangeBox();
+            game.fillBox();
+            game.checkBox();
+        })
+    </script>
+</body>
+
+</html>

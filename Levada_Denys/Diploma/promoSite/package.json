@@ -1,0 +1,23 @@
+{
+    "name": "promo",
+    "version": "0.0.1",
+    "description": "Diploma project by Levada Denys",
+    "main": "app.js",
+    "scripts": {
+        "test": "//"
+    },
+    "repository": {
+        "type": "git",
+        "url": "//"
+    },
+    "keywords": [
+        "promo",
+        "site"
+    ],
+    "author": "Levada Denys",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "3.3.7",
+        "jquery": "3.1.1"
+    }
+}

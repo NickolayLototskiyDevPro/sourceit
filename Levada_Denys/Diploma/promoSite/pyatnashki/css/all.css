@@ -1,0 +1,48 @@
+#main {
+    height: 550px;
+    position: relative;
+}
+
+#centralDiv {
+    position: absolute;
+    width: 70%;
+    /*height: 90%;*/
+    background: lightblue;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#center {
+    margin: 0 auto;
+}
+
+.row {
+    height: 170px;
+    width: 500px;
+    /*top: 0; left: 0; right: 0; bottom: 0;*/
+    /*background: white;*/
+    margin: 1em auto;
+}
+
+.block {
+    display: inline-block;
+    background: wheat;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1em;
+    font-size: 10em;
+    ;
+}
+
+#reset {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
