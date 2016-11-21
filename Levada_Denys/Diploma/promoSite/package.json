@@ -1,6 +1,6 @@
 {
     "name": "promo",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Diploma project by Levada Denys",
     "main": "app.js",
     "scripts": {

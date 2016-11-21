@@ -27,7 +27,7 @@
                     <li class="dropdown-header">Logical Games</li>
                     <li><a href="./../pyatnashki/index.html">Пятнашки</a></li>
                     <li class="dropdown-header"></li>
-                    <li><a href="./feedback/index.html">Feedback</a></li>
+                    <li><a href="./index.html">Feedback</a></li>
                     <!--<li><a href="#">JavaScript</a></li>-->
                 </ul>
             </div>
@@ -36,7 +36,43 @@
 
 
         <div id='main' class="container-fluid">
-            <span>Thank you for watching! You can send me your feedback here! </span>
+            <span>
+                <p id='introductionText'>
+                    Thank you for watching! You can send me your feedback here! 
+                </p>
+            </span>
+
+            <label id='mainLabel'> Feedback </label>
+            <div id='feedbackForm'>
+                <form id='feedBack' action='send.php'>
+
+                    <ul>
+                        <li>
+                            <label>Your name : </label>
+                            <input id='nameInput' type='text'>
+                        </li>
+                        <li>
+                            <label>Your e-mail: </label>
+                            <input id='contactEmailInput' type='text'>
+                        </li>
+                        <li>
+                            <label id='messageLabel'>Your message : </label>
+                            <textarea id='messageArea'> </textarea>
+
+                        </li>
+
+                        <li id='submitLi'>
+                            <button id='submitButton'>Submit</button>
+                        </li>
+
+                    </ul>
+
+
+
+                </form>
+            </div>
+
+
         </div>
 
 
@@ -54,6 +90,6 @@
     <!--wrapper end -->
 </body>
 
-<script src='./app.js'></script>
+<script src='./js/feedback.js'></script>
 
 </html>

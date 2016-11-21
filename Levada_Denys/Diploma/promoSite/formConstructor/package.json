@@ -1,0 +1,22 @@
+{
+  "name": "formconstructorhw",
+  "version": "0.0.1",
+  "description": "formconstructor",
+  "main": "app.js",
+  "scripts": {
+    "test": "//"
+  },
+  "repository": {
+    "type": "git",
+    "url": "//"
+  },
+  "keywords": [
+    "//"
+  ],
+  "author": "Levada_Denys",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
