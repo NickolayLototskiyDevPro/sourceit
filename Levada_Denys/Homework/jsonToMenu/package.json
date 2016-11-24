@@ -1,0 +1,23 @@
+{
+    "name": "jsontomenu",
+    "version": "0.0.1",
+    "description": "//",
+    "main": "app.js",
+    "scripts": {
+        "test": "//"
+    },
+    "repository": {
+        "type": "git",
+        "url": "//"
+    },
+    "keywords": [
+        "//"
+    ],
+    "author": "Levada Denys",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "^3.3.7",
+        "jquery": "^3.1.1",
+        "jquery-ui": "1.12.1"
+    }
+}
