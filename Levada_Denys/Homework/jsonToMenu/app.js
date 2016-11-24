@@ -19,7 +19,7 @@ let str = [
 ];
 
 
-// let strFromJson = JSON.parse($.ajax("./domMenu.json"));   // error - cross-origin request. google plugin doesn`t works.
+// let strFromJson = JSON.parse($.ajax("./domMenu.json"));   // error - cross-origin request. google plugin doesn`t work.
 // console.log(strFromJson);
 
 let dom = [];
@@ -59,7 +59,7 @@ function buildMenu(domMenu, parent) {
         if (!!domMenu[i].children[0]) {
             let current_ul = document.createElement('ul');
             current_ul.id = 'subMenu: ' + domMenu[i].id;
-            parent.appendChild(current_ul);
+            current_li.appendChild(current_ul);
 
             let children = domMenu[i].children;
 
