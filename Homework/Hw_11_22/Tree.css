@@ -1,0 +1,67 @@
+#main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 1em 1em 1em 1em;
+  border-radius: 5px;
+  border: 1px solid #B22222;
+  font: 2em/0em Century Gothic, Arial, Helvetica bold;
+}
+
+#main-nav ul li.active { background: #FFDEAD; }
+
+#main-nav ul li.active a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+    font-family: Century Gothic, Arial, Helvetica, sans-serif;
+}
+
+/* A single menu */
+
+.dropotron {
+  background: #FFDEAD;
+  border-radius: 0.5em;
+  list-style: none;
+  margin: 0;
+  min-width: 10em;
+  padding: 0.75em 1em 0.75em 1em;
+}
+
+.dropotron > li {
+  border-top: solid 1px #B22222;
+  margin: 0;
+  padding: 0;
+}
+
+.dropotron > li:first-child { border-top: 0; }
+
+.dropotron > li > a {
+  color: #ccc;
+  display: block;
+  padding: 0.5em 0 0.5em 0;
+  text-decoration: none;
+}
+
+.dropotron > li.active > a,
+.dropotron > li:hover > a { color: #fff; }
+
+/* Only applies to top level ("level-0") menus */
+
+.dropotron.level-0 { margin-top: 1.25em; }
+
+.dropotron.level-0:before {
+  content: '';
+  position: absolute;
+  border-bottom: solid 0.5em #FFDEAD;
+  border-left: solid 0.5em transparent;
+  border-right: solid 0.5em transparent;
+  top: -0.5em;
+}

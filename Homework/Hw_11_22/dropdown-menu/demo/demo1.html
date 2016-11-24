@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery Dropotron Plugin Demo</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="../jquery.dropotron.js"></script>
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<style>
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+  color: #444;
+  line-height: 1.5em;
+}
+
+h1 { font-size: 1.5em; }
+
+#wrapper {
+  max-width: 600px;
+  margin: 150px auto;
+  text-align: center;
+}
+
+#main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav ul li {
+  display: inline-block;
+  margin: 0 1em 0 1em;
+  padding: 0.35em 0.75em 0.35em 0.75em;
+  border-radius: 0.5em;
+}
+
+#main-nav ul li.active { background: #999; }
+
+#main-nav ul li.active a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* A single menu */
+
+.dropotron {
+  background: #444;
+  border-radius: 0.5em;
+  list-style: none;
+  margin: 0;
+  min-width: 10em;
+  padding: 0.75em 1em 0.75em 1em;
+}
+
+.dropotron > li {
+  border-top: solid 1px #555;
+  margin: 0;
+  padding: 0;
+}
+
+.dropotron > li:first-child { border-top: 0; }
+
+.dropotron > li > a {
+  color: #ccc;
+  display: block;
+  padding: 0.5em 0 0.5em 0;
+  text-decoration: none;
+}
+
+.dropotron > li.active > a,
+.dropotron > li:hover > a { color: #fff; }
+
+/* Only applies to top level ("level-0") menus */
+
+.dropotron.level-0 { margin-top: 1.25em; }
+
+.dropotron.level-0:before {
+  content: '';
+  position: absolute;
+  border-bottom: solid 0.5em #444;
+  border-left: solid 0.5em transparent;
+  border-right: solid 0.5em transparent;
+  top: -0.5em;
+}
+</style>
+		<script>
+			$(function() {
+				
+				// Note: make sure you call dropotron on the top level <ul>
+				$('#main-nav > ul').dropotron({ 
+					offsetY: -10 // Nudge up submenus by 10px to account for padding
+				});
+			
+			});
+		</script>
+		</head>
+		<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/menu/Animated-Multi-level-Dropdown-Menu-Plugin-For-jQuery-dropotron.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+        <div id="wrapper">
+          <h1>jQuery Dropotron Plugin Demo</h1>
+          <nav id="main-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li> <a href="#">Category</a>
+                <ul>
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                </ul>
+              </li>
+              <li> <a href="#">Works</a>
+                <ul>
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li> <a href="#">More ...</a>
+                    <ul>
+                      <li><a href="#">Subitem 1</a></li>
+                      <li><a href="#">Subitem 2</a></li>
+                      <li><a href="#">Subitem 3</a></li>
+                      <li><a href="#">Subitem 4</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Item 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <p> Amet non nec donec nisi aenean malesuada. Tincidunt fermentum orci adipiscing morbi ac nec curae auctor vivamus imperdiet blandit pretium. Feugiat nascetur nisi eleifend nunc nisl etiam duis curae malesuada scelerisque dignissim rhoncus. Placerat lobortis amet volutpat blandit auctor mollis condimentum. Porttitor dictum nunc arcu est fermentum sapien sociis parturient fusce lacus tincidunt. </p>
+        </div>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
